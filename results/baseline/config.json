@@ -1,0 +1,22 @@
+{
+  "rates_c": [
+    1.0
+  ],
+  "temperatures_c": [
+    25.0
+  ],
+  "models": [
+    "SPM",
+    "SPMe",
+    "DFN"
+  ],
+  "initial_soc": 0.1,
+  "voltage_limit_v": 4.2,
+  "cv_cutoff_c": 0.05,
+  "mesh_points": 40,
+  "rtol": 1e-06,
+  "atol": 1e-08,
+  "sample_period_s": 2,
+  "repeats": 3,
+  "heat_transfer_w_m2_k": 10.0
+}

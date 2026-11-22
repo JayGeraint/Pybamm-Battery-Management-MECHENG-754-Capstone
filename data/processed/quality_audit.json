@@ -1,0 +1,32 @@
+[
+  {
+    "file": "LGM50_cell02.csv",
+    "rows": 6313,
+    "header_line_1based": 14,
+    "duplicate_timestamp_rows": 4,
+    "md5": "md5:0bbf959cbfc367296ec69d7a74d2f5c1",
+    "checksum_verified": true,
+    "time_reversed": false,
+    "finite_required_values": true
+  },
+  {
+    "file": "LGM50_cell03.csv",
+    "rows": 6315,
+    "header_line_1based": 14,
+    "duplicate_timestamp_rows": 4,
+    "md5": "md5:a09cbd8eff0af55dfe9bc8728fa89908",
+    "checksum_verified": true,
+    "time_reversed": false,
+    "finite_required_values": true
+  },
+  {
+    "file": "LGM50_cell04.csv",
+    "rows": 6307,
+    "header_line_1based": 14,
+    "duplicate_timestamp_rows": 4,
+    "md5": "md5:f17615476283d2e15087165697ff9d7c",
+    "checksum_verified": true,
+    "time_reversed": false,
+    "finite_required_values": true
+  }
+]

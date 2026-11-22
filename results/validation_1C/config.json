@@ -1,0 +1,24 @@
+{
+  "parameter_set": "Chen2020",
+  "model_options": {
+    "thermal": "lumped"
+  },
+  "mesh": {
+    "x_n": 40,
+    "x_s": 40,
+    "x_p": 40,
+    "r_n": 40,
+    "r_p": 40
+  },
+  "rtol": 1e-06,
+  "atol": 1e-08,
+  "steps": [
+    17
+  ],
+  "initialization": "preceding rested voltage, measured initial temperature",
+  "input": "mean measured discharge current, mean chamber temperature",
+  "thermal_h_W_m2_K": 10,
+  "fitting": "none",
+  "dataset": "10.5281/zenodo.4032561",
+  "note": "Preliminary data comparison; separate from the 40/160 charging benchmark."
+}

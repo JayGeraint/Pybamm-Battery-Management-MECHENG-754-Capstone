@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-17",
+  "production_cases_attempted": 36,
+  "production_cases_completed": 33,
+  "production_failures": [
+    "SPMe 3C 10C",
+    "SPMe 3C 25C",
+    "SPMe 3C 40C"
+  ],
+  "positive_electrolyte_audit_cases": 33,
+  "measurement_checks_completed": 9,
+  "production_numerical_checks_passed": 4,
+  "final_runner_baseline_passed": true,
+  "nonphysical_concentration_guard_test_passed": true,
+  "notes": [
+    "Production timing is from results/sweep only.",
+    "Final runner adds a concentration guard and solver injection support; model equations and production configuration are unchanged.",
+    "Casadi exploration was interrupted without a completed result and is not an accepted alternative.",
+    "Experimental comparison is preliminary and uses 40/40 mesh; charging benchmark uses 40/160."
+  ]
+}

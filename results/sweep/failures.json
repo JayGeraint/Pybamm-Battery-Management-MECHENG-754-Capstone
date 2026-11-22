@@ -1,0 +1,26 @@
+[
+  {
+    "case": "SPMe_3C_10degC",
+    "model": "SPMe",
+    "rate_c": 3.0,
+    "ambient_c": 10.0,
+    "status": "failed",
+    "error": "ValueError('Expected completed CC and CV steps')"
+  },
+  {
+    "case": "SPMe_3C_25degC",
+    "model": "SPMe",
+    "rate_c": 3.0,
+    "ambient_c": 25.0,
+    "status": "failed",
+    "error": "ValueError('Expected completed CC and CV steps')"
+  },
+  {
+    "case": "SPMe_3C_40degC",
+    "model": "SPMe",
+    "rate_c": 3.0,
+    "ambient_c": 40.0,
+    "status": "failed",
+    "error": "ValueError('Expected completed CC and CV steps')"
+  }
+]

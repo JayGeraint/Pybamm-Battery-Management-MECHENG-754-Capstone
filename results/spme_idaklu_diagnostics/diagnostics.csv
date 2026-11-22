@@ -1,0 +1,13 @@
+ambient_c,rate_c,variant,complete,mesh_x,mesh_r,rtol,atol,returned_end_s,returned_termination,returned_min_electrolyte_mol_m3,returned_peak_temperature_c,error,solver_class
+10.0,3.0,default,False,40,160,1e-06,1e-08,28.393278364330797,event: Voltage > 4.2 [V] [experiment],-4.207913894636855,13.584308711790015,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+10.0,3.0,tighter_tolerance,False,40,160,1e-08,1e-10,28.393259765979543,event: Voltage > 4.2 [V] [experiment],-4.207891882383183,13.584644658415073,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+10.0,3.0,fine_x,False,80,160,1e-06,1e-08,28.43819085348478,event: Voltage > 4.2 [V] [experiment],-4.914612176702492,13.594678976995285,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+10.0,3.0,coarse_r,False,40,80,1e-06,1e-08,28.39321795949195,event: Voltage > 4.2 [V] [experiment],-4.207921087112603,13.586060565966136,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+25.0,3.0,default,False,40,160,1e-06,1e-08,28.434186025496047,event: Voltage > 4.2 [V] [experiment],-4.835180010439476,28.251851211276065,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+25.0,3.0,tighter_tolerance,False,40,160,1e-08,1e-10,28.434086079534904,event: Voltage > 4.2 [V] [experiment],-4.834905977717424,28.250669477314545,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+25.0,3.0,fine_x,False,80,160,1e-06,1e-08,28.43821581239548,event: Voltage > 4.2 [V] [experiment],-4.914645644141342,28.249573732760723,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+25.0,3.0,coarse_r,False,40,80,1e-06,1e-08,28.44417943354048,event: Voltage > 4.2 [V] [experiment],-4.990282505290555,28.25333345742092,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+40.0,3.0,default,False,40,160,1e-06,1e-08,28.570601665853005,event: Voltage > 4.2 [V] [experiment],-6.922011144979436,42.96690161057762,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+40.0,3.0,tighter_tolerance,False,40,160,1e-08,1e-10,28.57058240096839,event: Voltage > 4.2 [V] [experiment],-6.921885981712127,42.96521241361632,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+40.0,3.0,fine_x,False,80,160,1e-06,1e-08,28.530506331934276,event: Voltage > 4.2 [V] [experiment],-6.326234707574573,42.95725183528703,ValueError('Expected completed CC and CV steps'),IDAKLUSolver
+40.0,3.0,coarse_r,False,40,80,1e-06,1e-08,28.57149251388033,event: Voltage > 4.2 [V] [experiment],-6.935477926931505,42.96599056021654,ValueError('Expected completed CC and CV steps'),IDAKLUSolver

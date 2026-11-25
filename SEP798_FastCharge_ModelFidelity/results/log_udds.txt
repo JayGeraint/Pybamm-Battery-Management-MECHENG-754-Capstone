@@ -1,0 +1,43 @@
+[udds] 24 simulations on 3 workers ...
+    1/24 DFN   v=2.0  T=10.0 ok     wall= 200.02s 
+    2/24 DFN   v=2.0  T= 0.0 ok     wall= 207.55s 
+    3/24 DFN   v=2.0  T=25.0 ok     wall= 220.44s 
+    4/24 DFN   v=2.0  T=40.0 ok     wall= 176.93s 
+    5/24 DFN   v=1.0  T= 0.0 ok     wall= 199.03s 
+    6/24 DFN   v=1.0  T=10.0 ok     wall= 196.84s 
+    7/24 SPM   v=2.0  T= 0.0 ok     wall=   1.26s 
+    8/24 SPMe  v=2.0  T= 0.0 ok     wall=  11.92s 
+    9/24 SPM   v=2.0  T=10.0 ok     wall=   1.20s 
+   10/24 SPMe  v=2.0  T=10.0 ok     wall=  11.50s 
+   11/24 SPM   v=2.0  T=25.0 ok     wall=   1.12s 
+   12/24 SPMe  v=2.0  T=25.0 ok     wall=  11.41s 
+   13/24 SPM   v=2.0  T=40.0 ok     wall=   1.06s 
+   14/24 SPMe  v=2.0  T=40.0 ok     wall=  10.69s 
+   15/24 SPM   v=1.0  T= 0.0 ok     wall=   1.21s 
+   16/24 SPMe  v=1.0  T= 0.0 ok     wall=  10.00s 
+   17/24 SPM   v=1.0  T=10.0 ok     wall=   1.20s 
+   18/24 SPMe  v=1.0  T=10.0 ok     wall=   9.94s 
+   19/24 SPM   v=1.0  T=25.0 ok     wall=   1.10s 
+   20/24 SPMe  v=1.0  T=25.0 ok     wall=   9.39s 
+   21/24 SPM   v=1.0  T=40.0 ok     wall=   1.02s 
+   22/24 SPMe  v=1.0  T=40.0 ok     wall=   9.09s 
+   23/24 DFN   v=1.0  T=25.0 ok     wall= 186.20s 
+   24/24 DFN   v=1.0  T=40.0 ok     wall= 176.86s 
+[udds] done in 585 s
+model  value  T_amb_C status  V_rmse_mV  Tpeak_err_K  class limiting_metric
+  SPM    1.0      0.0     ok  15.068895    -0.466819      0                
+ SPMe    1.0      0.0     ok   1.040980     0.023773      0                
+  SPM    1.0     10.0     ok  12.551241    -0.388834      0                
+ SPMe    1.0     10.0     ok   0.705348     0.015228      0                
+  SPM    1.0     25.0     ok   9.968729    -0.306912      0                
+ SPMe    1.0     25.0     ok   0.454309     0.009011      0                
+  SPM    1.0     40.0     ok   8.258576    -0.255868      0                
+ SPMe    1.0     40.0     ok   0.356267     0.005859      0                
+  SPM    2.0      0.0     ok  26.877806    -1.660245      1       V_rmse_mV
+ SPMe    2.0      0.0     ok   2.709606     0.144147      0                
+  SPM    2.0     10.0     ok  22.763642    -1.404510      1       V_rmse_mV
+ SPMe    2.0     10.0     ok   1.819041     0.105810      0                
+  SPM    2.0     25.0     ok  18.402509    -1.137775      0                
+ SPMe    2.0     25.0     ok   1.094024     0.067284      0                
+  SPM    2.0     40.0     ok  15.477316    -0.960015      0                
+ SPMe    2.0     40.0     ok   0.771015     0.046674      0                

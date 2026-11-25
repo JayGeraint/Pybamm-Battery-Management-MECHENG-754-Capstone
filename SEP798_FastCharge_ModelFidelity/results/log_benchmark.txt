@@ -1,0 +1,106 @@
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 0, 'status': 'ok', 'wall_s': 0.3591540229999737, 'solve_s': 0.02044035900007657}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 1, 'status': 'ok', 'wall_s': 0.38013361299999815, 'solve_s': 0.024150090999683016}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 2, 'status': 'ok', 'wall_s': 0.42839357799994104, 'solve_s': 0.02888528099992982}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 3, 'status': 'ok', 'wall_s': 0.3540624349998325, 'solve_s': 0.020243485000264627}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 4, 'status': 'ok', 'wall_s': 0.3813068750000639, 'solve_s': 0.021582337000381813}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 0, 'status': 'ok', 'wall_s': 1.1664523939998617, 'solve_s': 0.062109167000016896}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 1, 'status': 'ok', 'wall_s': 1.549747760000173, 'solve_s': 0.07325447899984283}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 2, 'status': 'ok', 'wall_s': 1.096956586000033, 'solve_s': 0.06436011100049654}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 3, 'status': 'ok', 'wall_s': 1.2341607120001754, 'solve_s': 0.063266647999626}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 4, 'status': 'ok', 'wall_s': 1.159665987000153, 'solve_s': 0.0600360250000449}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 0, 'status': 'ok', 'wall_s': 1.8012542750002467, 'solve_s': 0.206882066000162}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 1, 'status': 'ok', 'wall_s': 1.5480432959998325, 'solve_s': 0.19272701900035827}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 2, 'status': 'ok', 'wall_s': 2.186400281999795, 'solve_s': 0.18222579099983705}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 3, 'status': 'ok', 'wall_s': 1.7154774529999486, 'solve_s': 0.18473862599967106}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 4, 'status': 'ok', 'wall_s': 1.6065796949997093, 'solve_s': 0.19026922000011837}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 0, 'status': 'ok', 'wall_s': 0.35315648599998894, 'solve_s': 0.018404538999675424}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 1, 'status': 'ok', 'wall_s': 0.3752497250002307, 'solve_s': 0.021079054999972868}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 2, 'status': 'ok', 'wall_s': 0.39098813400005383, 'solve_s': 0.020689752000635053}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 3, 'status': 'ok', 'wall_s': 0.36935112599985587, 'solve_s': 0.019032310999591573}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 4, 'status': 'ok', 'wall_s': 0.35840020899968295, 'solve_s': 0.021864781000203948}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 0, 'status': 'ok', 'wall_s': 1.6654556889998275, 'solve_s': 0.0818458170001577}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 1, 'status': 'ok', 'wall_s': 1.1789691429999039, 'solve_s': 0.057895950999864}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 2, 'status': 'ok', 'wall_s': 1.0825320540002394, 'solve_s': 0.05947437799977706}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 3, 'status': 'ok', 'wall_s': 1.1624527999997554, 'solve_s': 0.06974292400036575}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 4, 'status': 'ok', 'wall_s': 1.09728197000004, 'solve_s': 0.05881142999987787}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 0, 'status': 'ok', 'wall_s': 1.6246645360001821, 'solve_s': 0.2393143140002394}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 1, 'status': 'ok', 'wall_s': 2.2324665500000265, 'solve_s': 0.21752732999993896}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 2, 'status': 'ok', 'wall_s': 1.5921609359998001, 'solve_s': 0.204795739000474}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 3, 'status': 'ok', 'wall_s': 1.7075190220002696, 'solve_s': 0.24373067200031073}
+{'protocol': 'charge', 'value': 2.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 4, 'status': 'ok', 'wall_s': 1.7011934029997064, 'solve_s': 0.2516703400001461}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPM', 'repeat': 0, 'status': 'ok', 'wall_s': 0.3384258409996619, 'solve_s': 0.01939571299999443}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPM', 'repeat': 1, 'status': 'ok', 'wall_s': 0.35033010600000125, 'solve_s': 0.0178097049997632}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPM', 'repeat': 2, 'status': 'ok', 'wall_s': 0.4475403129999904, 'solve_s': 0.023248237999723642}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPM', 'repeat': 3, 'status': 'ok', 'wall_s': 0.38099525000006906, 'solve_s': 0.019895780000297236}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPM', 'repeat': 4, 'status': 'ok', 'wall_s': 0.39118010600031994, 'solve_s': 0.018486910999854445}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPMe', 'repeat': 0, 'status': 'ok', 'wall_s': 1.1592143210000359, 'solve_s': 0.07530352300045706}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPMe', 'repeat': 1, 'status': 'ok', 'wall_s': 1.1136982370003352, 'solve_s': 0.06560994999972536}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPMe', 'repeat': 2, 'status': 'ok', 'wall_s': 1.0933116139999584, 'solve_s': 0.06279872199957026}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPMe', 'repeat': 3, 'status': 'ok', 'wall_s': 1.1020461009998144, 'solve_s': 0.07129261799946107}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'SPMe', 'repeat': 4, 'status': 'ok', 'wall_s': 1.066734181999891, 'solve_s': 0.07180176300016683}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'DFN', 'repeat': 0, 'status': 'ok', 'wall_s': 1.8891605610001534, 'solve_s': 0.2180516120001812}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'DFN', 'repeat': 1, 'status': 'ok', 'wall_s': 2.1401670390000618, 'solve_s': 0.21834219099946495}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'DFN', 'repeat': 2, 'status': 'ok', 'wall_s': 1.6531168730002719, 'solve_s': 0.21310214300001462}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'DFN', 'repeat': 3, 'status': 'ok', 'wall_s': 1.7393444329995873, 'solve_s': 0.19666094300009718}
+{'protocol': 'charge', 'value': 3.0, 'T_amb_C': 40.0, 'model': 'DFN', 'repeat': 4, 'status': 'ok', 'wall_s': 1.8081901750001634, 'solve_s': 0.2120140540000648}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPM', 'repeat': 0, 'status': 'ok', 'wall_s': 0.39020157899994956, 'solve_s': 0.021659703999830526}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPM', 'repeat': 1, 'status': 'ok', 'wall_s': 0.5263849000002665, 'solve_s': 0.024026563000006718}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPM', 'repeat': 2, 'status': 'ok', 'wall_s': 0.49926010999979553, 'solve_s': 0.018740384000011545}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPM', 'repeat': 3, 'status': 'ok', 'wall_s': 0.3947331760000452, 'solve_s': 0.0193726800002878}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPM', 'repeat': 4, 'status': 'ok', 'wall_s': 0.4170507849999012, 'solve_s': 0.022750051000002713}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPMe', 'repeat': 0, 'status': 'ok', 'wall_s': 1.1823374309997234, 'solve_s': 0.07201248899991697}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPMe', 'repeat': 1, 'status': 'ok', 'wall_s': 1.3575076499996612, 'solve_s': 0.08441889000005176}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPMe', 'repeat': 2, 'status': 'ok', 'wall_s': 1.2439201180000055, 'solve_s': 0.0691694379997898}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPMe', 'repeat': 3, 'status': 'ok', 'wall_s': 1.1160250230000202, 'solve_s': 0.07054380399995352}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'SPMe', 'repeat': 4, 'status': 'ok', 'wall_s': 1.1061527649999334, 'solve_s': 0.0631836780003141}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'DFN', 'repeat': 0, 'status': 'ok', 'wall_s': 2.29410978299984, 'solve_s': 0.20291585399991163}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'DFN', 'repeat': 1, 'status': 'ok', 'wall_s': 1.679032306999943, 'solve_s': 0.1859431630000472}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'DFN', 'repeat': 2, 'status': 'ok', 'wall_s': 1.5359463489999143, 'solve_s': 0.18975756200052274}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'DFN', 'repeat': 3, 'status': 'ok', 'wall_s': 1.7409697590001088, 'solve_s': 0.2299305399997138}
+{'protocol': 'charge', 'value': 1.0, 'T_amb_C': 0.0, 'model': 'DFN', 'repeat': 4, 'status': 'ok', 'wall_s': 1.601641164999819, 'solve_s': 0.20566412899961506}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 0, 'status': 'ok', 'wall_s': 0.206496910000169, 'solve_s': 0.00514866899993649}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 1, 'status': 'ok', 'wall_s': 0.20340622699995947, 'solve_s': 0.005514585999662813}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 2, 'status': 'ok', 'wall_s': 0.20432223899979363, 'solve_s': 0.005688107999958447}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 3, 'status': 'ok', 'wall_s': 0.882318868999846, 'solve_s': 0.005599867999990238}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 4, 'status': 'ok', 'wall_s': 0.2220715910002582, 'solve_s': 0.0053229499999361}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 0, 'status': 'ok', 'wall_s': 0.6308525809999992, 'solve_s': 0.047536053999920114}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 1, 'status': 'ok', 'wall_s': 0.6368814020001992, 'solve_s': 0.03776204899986624}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 2, 'status': 'ok', 'wall_s': 0.6081455359999381, 'solve_s': 0.04030394600022191}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 3, 'status': 'ok', 'wall_s': 0.6822041330001412, 'solve_s': 0.03675333999990471}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 4, 'status': 'ok', 'wall_s': 0.586103016999914, 'solve_s': 0.038085184000010486}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 0, 'status': 'ok', 'wall_s': 0.9185565030002181, 'solve_s': 0.09627371499982473}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 1, 'status': 'ok', 'wall_s': 0.8506401849999747, 'solve_s': 0.09888270700002977}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 2, 'status': 'ok', 'wall_s': 0.8988398599999528, 'solve_s': 0.08793370299963499}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 3, 'status': 'ok', 'wall_s': 0.8402483570002914, 'solve_s': 0.09870569199983947}
+{'protocol': 'discharge', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 4, 'status': 'ok', 'wall_s': 0.8809562599999481, 'solve_s': 0.10478774100010924}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 0, 'status': 'ok', 'wall_s': 0.47483374900002673, 'solve_s': 0.24549784100008765}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 1, 'status': 'ok', 'wall_s': 0.5335198610000589, 'solve_s': 0.2780472389999886}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 2, 'status': 'ok', 'wall_s': 0.5067572199995993, 'solve_s': 0.2583865810001953}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 3, 'status': 'ok', 'wall_s': 0.5758399370001825, 'solve_s': 0.2863648719999219}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPM', 'repeat': 4, 'status': 'ok', 'wall_s': 0.4768828169999324, 'solve_s': 0.24840052200033824}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 0, 'status': 'ok', 'wall_s': 2.9932618799998636, 'solve_s': 2.3971663239999543}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 1, 'status': 'ok', 'wall_s': 3.1602180110003246, 'solve_s': 2.5399537419998524}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 2, 'status': 'ok', 'wall_s': 3.249105474999851, 'solve_s': 2.4852227599999424}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 3, 'status': 'ok', 'wall_s': 3.4171833290001814, 'solve_s': 2.5885037440002634}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'SPMe', 'repeat': 4, 'status': 'ok', 'wall_s': 3.0528154980002, 'solve_s': 2.4541331479999826}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 0, 'status': 'ok', 'wall_s': 54.137413574999755, 'solve_s': 53.31604539399996}
+{'protocol': 'udds', 'value': 1.0, 'T_amb_C': 25.0, 'model': 'DFN', 'repeat': 1, 'status': 'ok', 'wall_s': 54.51966705299992, 'solve_s': 53.81106008000006}
+ protocol  value  T_amb_C model    wall_s   solve_s  speedup_wall  speedup_solve                         machine
+   charge    1.0      0.0   DFN  1.640337  0.197711      1.000000       1.000000 x86_64 | Linux | python 3.13.18
+   charge    1.0      0.0   SPM  0.458155  0.021061      3.580306       9.387371 x86_64 | Linux | python 3.13.18
+   charge    1.0      0.0  SPMe  1.179973  0.069857      1.390148       2.830238 x86_64 | Linux | python 3.13.18
+   charge    1.0     25.0   DFN  1.661029  0.187504      1.000000       1.000000 x86_64 | Linux | python 3.13.18
+   charge    1.0     25.0   SPM  0.380720  0.022866      4.362859       8.200042 x86_64 | Linux | python 3.13.18
+   charge    1.0     25.0  SPMe  1.196913  0.063813      1.387760       2.938317 x86_64 | Linux | python 3.13.18
+   charge    2.0     25.0   DFN  1.704356  0.230629      1.000000       1.000000 x86_64 | Linux | python 3.13.18
+   charge    2.0     25.0   SPM  0.372300  0.020884      4.577906      11.043121 x86_64 | Linux | python 3.13.18
+   charge    2.0     25.0  SPMe  1.129867  0.059143      1.508457       3.899521 x86_64 | Linux | python 3.13.18
+   charge    3.0     40.0   DFN  1.773767  0.212558      1.000000       1.000000 x86_64 | Linux | python 3.13.18
+   charge    3.0     40.0   SPM  0.386088  0.019191      4.594209      11.075727 x86_64 | Linux | python 3.13.18
+   charge    3.0     40.0  SPMe  1.097679  0.068451      1.615926       3.105246 x86_64 | Linux | python 3.13.18
+discharge    1.0     25.0   DFN  0.865798  0.098794      1.000000       1.000000 x86_64 | Linux | python 3.13.18
+discharge    1.0     25.0   SPM  0.213197  0.005557      4.061026      17.777607 x86_64 | Linux | python 3.13.18
+discharge    1.0     25.0  SPMe  0.622513  0.037924      1.390810       2.605084 x86_64 | Linux | python 3.13.18
+     udds    1.0     25.0   DFN 54.519667 53.811060      1.000000       1.000000 x86_64 | Linux | python 3.13.18
+     udds    1.0     25.0   SPM  0.520139  0.268217    104.817588     200.625158 x86_64 | Linux | python 3.13.18
+     udds    1.0     25.0  SPMe  3.204662  2.512588     17.012612      21.416585 x86_64 | Linux | python 3.13.18

@@ -1,0 +1,183 @@
+[discharge] 108 simulations on 3 workers ...
+    1/108 DFN   v=3.0  T=10.0 ok     wall=   0.88s 
+    2/108 DFN   v=3.0  T= 5.0 ok     wall=   0.98s 
+    3/108 DFN   v=3.0  T= 0.0 ok     wall=   1.27s 
+    4/108 DFN   v=3.0  T=15.0 ok     wall=   0.78s 
+    5/108 DFN   v=3.0  T=20.0 ok     wall=   0.79s 
+    6/108 DFN   v=3.0  T=25.0 ok     wall=   0.81s 
+    7/108 DFN   v=3.0  T=30.0 ok     wall=   0.79s 
+    8/108 DFN   v=3.0  T=35.0 ok     wall=   0.77s 
+    9/108 DFN   v=3.0  T=40.0 ok     wall=   0.77s 
+   10/108 DFN   v=2.0  T= 0.0 ok     wall=   0.79s 
+   11/108 DFN   v=2.0  T= 5.0 ok     wall=   0.76s 
+   12/108 DFN   v=2.0  T=10.0 ok     wall=   0.79s 
+   13/108 DFN   v=2.0  T=20.0 ok     wall=   0.79s 
+   14/108 DFN   v=2.0  T=15.0 ok     wall=   0.83s 
+   15/108 DFN   v=2.0  T=25.0 ok     wall=   0.80s 
+   16/108 DFN   v=2.0  T=35.0 ok     wall=   0.79s 
+   17/108 DFN   v=2.0  T=30.0 ok     wall=   0.83s 
+   18/108 DFN   v=2.0  T=40.0 ok     wall=   0.81s 
+   19/108 DFN   v=1.0  T= 0.0 ok     wall=   0.77s 
+   20/108 DFN   v=1.0  T= 5.0 ok     wall=   0.77s 
+   21/108 DFN   v=1.0  T=10.0 ok     wall=   0.77s 
+   22/108 DFN   v=1.0  T=15.0 ok     wall=   0.80s 
+   23/108 DFN   v=1.0  T=20.0 ok     wall=   0.88s 
+   24/108 DFN   v=1.0  T=25.0 ok     wall=   0.80s 
+   25/108 DFN   v=1.0  T=30.0 ok     wall=   0.78s 
+   26/108 DFN   v=1.0  T=35.0 ok     wall=   0.75s 
+   27/108 DFN   v=1.0  T=40.0 ok     wall=   0.74s 
+   28/108 DFN   v=0.5  T= 0.0 ok     wall=   0.76s 
+   29/108 DFN   v=0.5  T= 5.0 ok     wall=   0.75s 
+   30/108 DFN   v=0.5  T=10.0 ok     wall=   0.75s 
+   31/108 DFN   v=0.5  T=15.0 ok     wall=   0.85s 
+   32/108 DFN   v=0.5  T=20.0 ok     wall=   0.87s 
+   33/108 DFN   v=0.5  T=25.0 ok     wall=   0.80s 
+   34/108 DFN   v=0.5  T=30.0 ok     wall=   0.76s 
+   35/108 DFN   v=0.5  T=35.0 ok     wall=   0.80s 
+   36/108 SPM   v=3.0  T= 0.0 ok     wall=   0.20s 
+   37/108 DFN   v=0.5  T=40.0 ok     wall=   0.75s 
+   38/108 SPM   v=3.0  T= 5.0 ok     wall=   0.21s 
+   39/108 SPMe  v=3.0  T= 0.0 ok     wall=   0.50s 
+   40/108 SPM   v=3.0  T=10.0 ok     wall=   0.21s 
+   41/108 SPMe  v=3.0  T= 5.0 ok     wall=   0.51s 
+   42/108 SPM   v=3.0  T=15.0 ok     wall=   0.21s 
+   43/108 SPM   v=3.0  T=20.0 ok     wall=   0.20s 
+   44/108 SPMe  v=3.0  T=10.0 ok     wall=   0.49s 
+   45/108 SPM   v=3.0  T=25.0 ok     wall=   0.20s 
+   46/108 SPMe  v=3.0  T=15.0 ok     wall=   0.52s 
+   47/108 SPM   v=3.0  T=30.0 ok     wall=   0.21s 
+   48/108 SPMe  v=3.0  T=20.0 ok     wall=   0.83s 
+   49/108 SPMe  v=3.0  T=25.0 ok     wall=   0.60s 
+   50/108 SPM   v=3.0  T=35.0 ok     wall=   0.19s 
+   51/108 SPMe  v=3.0  T=30.0 ok     wall=   0.52s 
+   52/108 SPM   v=3.0  T=40.0 ok     wall=   0.20s 
+   53/108 SPM   v=2.0  T= 0.0 ok     wall=   0.19s 
+   54/108 SPMe  v=3.0  T=35.0 ok     wall=   0.89s 
+   55/108 SPM   v=2.0  T= 5.0 ok     wall=   0.20s 
+   56/108 SPMe  v=3.0  T=40.0 ok     wall=   0.96s 
+   57/108 SPMe  v=2.0  T= 0.0 ok     wall=   0.49s 
+   58/108 SPM   v=2.0  T=10.0 ok     wall=   0.20s 
+   59/108 SPM   v=2.0  T=15.0 ok     wall=   0.21s 
+   60/108 SPMe  v=2.0  T=10.0 ok     wall=   0.50s 
+   61/108 SPMe  v=2.0  T= 5.0 ok     wall=   0.57s 
+   62/108 SPM   v=2.0  T=20.0 ok     wall=   0.20s 
+   63/108 SPM   v=2.0  T=25.0 ok     wall=   0.20s 
+   64/108 SPMe  v=2.0  T=15.0 ok     wall=   0.54s 
+   65/108 SPMe  v=2.0  T=20.0 ok     wall=   0.53s 
+   66/108 SPM   v=2.0  T=30.0 ok     wall=   0.19s 
+   67/108 SPM   v=2.0  T=35.0 ok     wall=   0.21s 
+   68/108 SPMe  v=2.0  T=25.0 ok     wall=   0.50s 
+   69/108 SPMe  v=2.0  T=30.0 ok     wall=   0.51s 
+   70/108 SPM   v=2.0  T=40.0 ok     wall=   0.20s 
+   71/108 SPM   v=1.0  T= 0.0 ok     wall=   0.20s 
+   72/108 SPMe  v=2.0  T=35.0 ok     wall=   0.51s 
+   73/108 SPM   v=1.0  T= 5.0 ok     wall=   0.26s 
+   74/108 SPMe  v=2.0  T=40.0 ok     wall=   0.52s 
+   75/108 SPM   v=1.0  T=10.0 ok     wall=   0.20s 
+   76/108 SPMe  v=1.0  T= 0.0 ok     wall=   0.54s 
+   77/108 SPMe  v=1.0  T= 5.0 ok     wall=   0.52s 
+   78/108 SPM   v=1.0  T=15.0 ok     wall=   0.20s 
+   79/108 SPMe  v=1.0  T=10.0 ok     wall=   0.51s 
+   80/108 SPM   v=1.0  T=20.0 ok     wall=   0.20s 
+   81/108 SPM   v=1.0  T=25.0 ok     wall=   0.20s 
+   82/108 SPMe  v=1.0  T=15.0 ok     wall=   0.54s 
+   83/108 SPMe  v=1.0  T=20.0 ok     wall=   0.51s 
+   84/108 SPM   v=1.0  T=30.0 ok     wall=   0.43s 
+   85/108 SPMe  v=1.0  T=25.0 ok     wall=   0.52s 
+   86/108 SPM   v=1.0  T=35.0 ok     wall=   0.21s 
+   87/108 SPM   v=1.0  T=40.0 ok     wall=   0.21s 
+   88/108 SPMe  v=1.0  T=30.0 ok     wall=   0.83s 
+   89/108 SPMe  v=1.0  T=35.0 ok     wall=   0.52s 
+   90/108 SPM   v=0.5  T= 0.0 ok     wall=   0.20s 
+   91/108 SPMe  v=1.0  T=40.0 ok     wall=   0.51s 
+   92/108 SPM   v=0.5  T= 5.0 ok     wall=   0.20s 
+   93/108 SPM   v=0.5  T=10.0 ok     wall=   0.21s 
+   94/108 SPMe  v=0.5  T= 0.0 ok     wall=   0.50s 
+   95/108 SPM   v=0.5  T=15.0 ok     wall=   0.20s 
+   96/108 SPMe  v=0.5  T= 5.0 ok     wall=   0.51s 
+   97/108 SPM   v=0.5  T=20.0 ok     wall=   0.24s 
+   98/108 SPMe  v=0.5  T=10.0 ok     wall=   0.56s 
+   99/108 SPMe  v=0.5  T=15.0 ok     wall=   0.51s 
+  100/108 SPM   v=0.5  T=25.0 ok     wall=   0.20s 
+  101/108 SPM   v=0.5  T=30.0 ok     wall=   0.19s 
+  102/108 SPMe  v=0.5  T=20.0 ok     wall=   0.50s 
+  103/108 SPMe  v=0.5  T=25.0 ok     wall=   0.50s 
+  104/108 SPM   v=0.5  T=35.0 ok     wall=   0.20s 
+  105/108 SPM   v=0.5  T=40.0 ok     wall=   0.20s 
+  106/108 SPMe  v=0.5  T=30.0 ok     wall=   0.50s 
+  107/108 SPMe  v=0.5  T=35.0 ok     wall=   0.51s 
+  108/108 SPMe  v=0.5  T=40.0 ok     wall=   0.51s 
+[discharge] done in 26 s
+model  value  T_amb_C status  V_rmse_mV  Tpeak_err_K  Q_err_pct  class limiting_metric
+  SPM    0.5      0.0     ok  31.149930    -1.698720   0.006618      1       V_rmse_mV
+ SPMe    0.5      0.0     ok   2.836833    -0.084427  -0.008522      0                
+  SPM    0.5      5.0     ok  28.691888    -1.515279   0.034829      1       V_rmse_mV
+ SPMe    0.5      5.0     ok   2.366146    -0.061051  -0.005375      0                
+  SPM    0.5     10.0     ok  26.593564    -1.365053   0.050716      1       V_rmse_mV
+ SPMe    0.5     10.0     ok   2.023805    -0.045940  -0.003692      0                
+  SPM    0.5     15.0     ok  24.815776    -1.240554   0.059150      1       V_rmse_mV
+ SPMe    0.5     15.0     ok   1.781276    -0.034805  -0.002663      0                
+  SPM    0.5     20.0     ok  23.296979    -1.139729   0.062891      1       V_rmse_mV
+ SPMe    0.5     20.0     ok   1.617193    -0.026761  -0.002020      0                
+  SPM    0.5     25.0     ok  21.994737    -1.055014   0.064021      1       V_rmse_mV
+ SPMe    0.5     25.0     ok   1.513928    -0.021044  -0.001613      0                
+  SPM    0.5     30.0     ok  20.865949    -0.983799   0.063654      1       V_rmse_mV
+ SPMe    0.5     30.0     ok   1.457338    -0.017001  -0.001335      0                
+  SPM    0.5     35.0     ok  19.862873    -0.924312   0.062453      0                
+ SPMe    0.5     35.0     ok   1.435217    -0.013765  -0.001129      0                
+  SPM    0.5     40.0     ok  18.946842    -0.871629   0.060937      0                
+ SPMe    0.5     40.0     ok   1.436712    -0.011490  -0.000979      0                
+  SPM    1.0      0.0     ok  47.073228    -5.707724  -0.454457      2       V_rmse_mV
+ SPMe    1.0      0.0     ok   7.624361    -0.570870  -0.065867      0                
+  SPM    1.0      5.0     ok  43.922812    -5.172643  -0.294404      2       V_rmse_mV
+ SPMe    1.0      5.0     ok   6.422957    -0.460958  -0.045354      0                
+  SPM    1.0     10.0     ok  41.193458    -4.706101  -0.182305      2       V_rmse_mV
+ SPMe    1.0     10.0     ok   5.458749    -0.370607  -0.031329      0                
+  SPM    1.0     15.0     ok  38.834562    -4.307614  -0.104155      2     Tpeak_err_K
+ SPMe    1.0     15.0     ok   4.690016    -0.298929  -0.021915      0                
+  SPM    1.0     20.0     ok  36.787587    -3.969433  -0.049698      1       V_rmse_mV
+ SPMe    1.0     20.0     ok   4.090450    -0.243497  -0.015644      0                
+  SPM    1.0     25.0     ok  35.038431    -3.685725  -0.011933      1       V_rmse_mV
+ SPMe    1.0     25.0     ok   3.634419    -0.201447  -0.011472      0                
+  SPM    1.0     30.0     ok  33.503235    -3.447259   0.014267      1       V_rmse_mV
+ SPMe    1.0     30.0     ok   3.297085    -0.169282  -0.008643      0                
+  SPM    1.0     35.0     ok  32.192157    -3.245983   0.032488      1       V_rmse_mV
+ SPMe    1.0     35.0     ok   3.054818    -0.144892  -0.006698      0                
+  SPM    1.0     40.0     ok  31.060725    -3.074906   0.045188      1       V_rmse_mV
+ SPMe    1.0     40.0     ok   2.888674    -0.127146  -0.005365      0                
+  SPM    2.0      0.0     ok  76.721349   -14.558535  -1.407388      2       V_rmse_mV
+ SPMe    2.0      0.0     ok 348.027711   -32.865417 -95.568391      2       V_rmse_mV
+  SPM    2.0      5.0     ok  68.382344   -13.718079  -1.095720      2       V_rmse_mV
+ SPMe    2.0      5.0     ok 116.476648    -1.394347  -0.113319      2       V_rmse_mV
+  SPM    2.0     10.0     ok  63.012942   -12.914016  -0.849940      2       V_rmse_mV
+ SPMe    2.0     10.0     ok  15.957692    -1.315172  -0.099459      0                
+  SPM    2.0     15.0     ok  59.116393   -12.161745  -0.655575      2       V_rmse_mV
+ SPMe    2.0     15.0     ok  11.948705    -1.168167  -0.079645      0                
+  SPM    2.0     20.0     ok  55.989337   -11.467839  -0.501775      2       V_rmse_mV
+ SPMe    2.0     20.0     ok  10.128802    -1.031108  -0.063330      0                
+  SPM    2.0     25.0     ok  53.482121   -10.836861  -0.380218      2       V_rmse_mV
+ SPMe    2.0     25.0     ok   8.908512    -0.907948  -0.050304      0                
+  SPM    2.0     30.0     ok  51.399978   -10.272260  -0.284345      2       V_rmse_mV
+ SPMe    2.0     30.0     ok   7.984130    -0.798773  -0.040012      0                
+  SPM    2.0     35.0     ok  49.636295    -9.768386  -0.208375      2       V_rmse_mV
+ SPMe    2.0     35.0     ok   7.247245    -0.705014  -0.032017      0                
+  SPM    2.0     40.0     ok  48.127591    -9.325870  -0.148238      2       V_rmse_mV
+ SPMe    2.0     40.0     ok   6.648330    -0.623545  -0.025712      0                
+  SPM    3.0      0.0     ok 159.442125   -23.020251  -1.990935      2       V_rmse_mV
+ SPMe    3.0      0.0     ok  33.249458   -55.798361 -97.103559      2       Q_err_pct
+  SPM    3.0      5.0     ok 125.091532   -22.017551  -1.636662      2       V_rmse_mV
+ SPMe    3.0      5.0     ok 276.872987   -52.184283 -96.823499      2       V_rmse_mV
+  SPM    3.0     10.0     ok  99.167316   -21.034351  -1.345714      2       V_rmse_mV
+ SPMe    3.0     10.0     ok 314.929384   -48.392378 -96.436252      2       V_rmse_mV
+  SPM    3.0     15.0     ok  84.932252   -20.101302  -1.105296      2       V_rmse_mV
+ SPMe    3.0     15.0     ok 419.169430   -44.039541 -95.837501      2       V_rmse_mV
+  SPM    3.0     20.0     ok  77.045928   -19.224518  -0.905802      2       V_rmse_mV
+ SPMe    3.0     20.0     ok 156.677591    -1.412144  -0.066084      2       V_rmse_mV
+  SPM    3.0     25.0     ok  71.729670   -18.405181  -0.739793      2       V_rmse_mV
+ SPMe    3.0     25.0     ok  62.910973    -1.480037  -0.068545      2       V_rmse_mV
+  SPM    3.0     30.0     ok  68.103948   -17.645905  -0.601554      2       V_rmse_mV
+ SPMe    3.0     30.0     ok  14.360747    -1.484146  -0.065884      0                
+  SPM    3.0     35.0     ok  65.337530   -16.946359  -0.486274      2       V_rmse_mV
+ SPMe    3.0     35.0     ok  12.077412    -1.364921  -0.056044      0                
+  SPM    3.0     40.0     ok  63.113284   -16.306094  -0.389995      2       V_rmse_mV
+ SPMe    3.0     40.0     ok  10.804801    -1.248159  -0.047319      0                

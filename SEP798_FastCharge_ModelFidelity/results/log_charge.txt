@@ -1,0 +1,545 @@
+[charge] 297 simulations on 3 workers ...
+    1/297 DFN   v=3.0  T=10.0 ok     wall=   1.58s 
+    2/297 DFN   v=3.0  T= 5.0 ok     wall=   1.68s 
+    3/297 DFN   v=3.0  T= 0.0 ok     wall=   1.80s 
+    4/297 DFN   v=3.0  T=15.0 ok     wall=   1.53s 
+    5/297 DFN   v=3.0  T=20.0 ok     wall=   1.51s 
+    6/297 DFN   v=3.0  T=25.0 ok     wall=   1.53s 
+    7/297 DFN   v=3.0  T=30.0 ok     wall=   1.51s 
+    8/297 DFN   v=3.0  T=35.0 ok     wall=   1.46s 
+    9/297 DFN   v=3.0  T=40.0 ok     wall=   1.55s 
+   10/297 DFN   v=2.75 T= 0.0 ok     wall=   1.59s 
+   11/297 DFN   v=2.75 T= 5.0 ok     wall=   1.57s 
+   12/297 DFN   v=2.75 T=10.0 ok     wall=   1.48s 
+   13/297 DFN   v=2.75 T=20.0 ok     wall=   1.95s 
+   14/297 DFN   v=2.75 T=15.0 ok     wall=   2.02s 
+   15/297 DFN   v=2.75 T=25.0 ok     wall=   1.94s 
+   16/297 DFN   v=2.75 T=30.0 ok     wall=   1.44s 
+   17/297 DFN   v=2.75 T=35.0 ok     wall=   1.48s 
+   18/297 DFN   v=2.75 T=40.0 ok     wall=   1.46s 
+   19/297 DFN   v=2.5  T= 0.0 ok     wall=   1.60s 
+   20/297 DFN   v=2.5  T= 5.0 ok     wall=   1.50s 
+   21/297 DFN   v=2.5  T=10.0 ok     wall=   1.50s 
+   22/297 DFN   v=2.5  T=20.0 ok     wall=   1.45s 
+   23/297 DFN   v=2.5  T=15.0 ok     wall=   1.51s 
+   24/297 DFN   v=2.5  T=25.0 ok     wall=   1.48s 
+   25/297 DFN   v=2.5  T=30.0 ok     wall=   1.47s 
+   26/297 DFN   v=2.5  T=40.0 ok     wall=   1.46s 
+   27/297 DFN   v=2.5  T=35.0 ok     wall=   1.54s 
+   28/297 DFN   v=2.25 T= 5.0 ok     wall=   1.49s 
+   29/297 DFN   v=2.25 T= 0.0 ok     wall=   1.54s 
+   30/297 DFN   v=2.25 T=10.0 ok     wall=   1.57s 
+   31/297 DFN   v=2.25 T=15.0 ok     wall=   1.58s 
+   32/297 DFN   v=2.25 T=25.0 ok     wall=   1.46s 
+   33/297 DFN   v=2.25 T=20.0 ok     wall=   1.59s 
+   34/297 DFN   v=2.25 T=30.0 ok     wall=   2.18s 
+   35/297 DFN   v=2.25 T=35.0 ok     wall=   2.17s 
+   36/297 DFN   v=2.25 T=40.0 ok     wall=   2.14s 
+   37/297 DFN   v=2.0  T=10.0 ok     wall=   1.47s 
+   38/297 DFN   v=2.0  T= 5.0 ok     wall=   1.54s 
+   39/297 DFN   v=2.0  T= 0.0 ok     wall=   1.52s 
+   40/297 DFN   v=2.0  T=20.0 ok     wall=   1.47s 
+   41/297 DFN   v=2.0  T=25.0 ok     wall=   1.51s 
+   42/297 DFN   v=2.0  T=15.0 ok     wall=   1.56s 
+   43/297 DFN   v=2.0  T=30.0 ok     wall=   1.54s 
+   44/297 DFN   v=2.0  T=40.0 ok     wall=   1.48s 
+   45/297 DFN   v=2.0  T=35.0 ok     wall=   1.54s 
+   46/297 DFN   v=1.75 T=10.0 ok     wall=   1.41s 
+   47/297 DFN   v=1.75 T= 5.0 ok     wall=   1.49s 
+   48/297 DFN   v=1.75 T= 0.0 ok     wall=   1.61s 
+   49/297 DFN   v=1.75 T=15.0 ok     wall=   1.48s 
+   50/297 DFN   v=1.75 T=20.0 ok     wall=   1.43s 
+   51/297 DFN   v=1.75 T=25.0 ok     wall=   1.44s 
+   52/297 DFN   v=1.75 T=30.0 ok     wall=   1.44s 
+   53/297 DFN   v=1.75 T=35.0 ok     wall=   1.47s 
+   54/297 DFN   v=1.75 T=40.0 ok     wall=   1.45s 
+   55/297 DFN   v=1.5  T= 0.0 ok     wall=   2.06s 
+   56/297 DFN   v=1.5  T= 5.0 ok     wall=   2.05s 
+   57/297 DFN   v=1.5  T=10.0 ok     wall=   2.14s 
+   58/297 DFN   v=1.5  T=15.0 ok     wall=   1.40s 
+   59/297 DFN   v=1.5  T=20.0 ok     wall=   1.41s 
+   60/297 DFN   v=1.5  T=25.0 ok     wall=   1.48s 
+   61/297 DFN   v=1.5  T=30.0 ok     wall=   1.40s 
+   62/297 DFN   v=1.5  T=35.0 ok     wall=   1.46s 
+   63/297 DFN   v=1.5  T=40.0 ok     wall=   1.43s 
+   64/297 DFN   v=1.25 T= 0.0 ok     wall=   1.53s 
+   65/297 DFN   v=1.25 T= 5.0 ok     wall=   1.49s 
+   66/297 DFN   v=1.25 T=10.0 ok     wall=   1.51s 
+   67/297 DFN   v=1.25 T=15.0 ok     wall=   1.53s 
+   68/297 DFN   v=1.25 T=20.0 ok     wall=   1.58s 
+   69/297 DFN   v=1.25 T=25.0 ok     wall=   1.53s 
+   70/297 DFN   v=1.25 T=30.0 ok     wall=   1.43s 
+   71/297 DFN   v=1.25 T=35.0 ok     wall=   1.45s 
+   72/297 DFN   v=1.25 T=40.0 ok     wall=   1.40s 
+   73/297 DFN   v=1.0  T= 0.0 ok     wall=   1.52s 
+   74/297 DFN   v=1.0  T= 5.0 ok     wall=   1.53s 
+   75/297 DFN   v=1.0  T=10.0 ok     wall=   1.49s 
+   76/297 DFN   v=1.0  T=15.0 ok     wall=   1.53s 
+   77/297 DFN   v=1.0  T=25.0 ok     wall=   1.45s 
+   78/297 DFN   v=1.0  T=20.0 ok     wall=   1.53s 
+   79/297 DFN   v=1.0  T=30.0 ok     wall=   1.52s 
+   80/297 DFN   v=1.0  T=40.0 ok     wall=   1.46s 
+   81/297 DFN   v=1.0  T=35.0 ok     wall=   1.52s 
+   82/297 DFN   v=0.75 T= 0.0 ok     wall=   1.41s 
+   83/297 DFN   v=0.75 T=10.0 ok     wall=   1.48s 
+   84/297 DFN   v=0.75 T= 5.0 ok     wall=   1.61s 
+   85/297 DFN   v=0.75 T=15.0 ok     wall=   1.57s 
+   86/297 DFN   v=0.75 T=20.0 ok     wall=   1.47s 
+   87/297 DFN   v=0.75 T=25.0 ok     wall=   1.61s 
+   88/297 DFN   v=0.75 T=30.0 ok     wall=   1.48s 
+   89/297 DFN   v=0.75 T=35.0 ok     wall=   1.66s 
+   90/297 DFN   v=0.75 T=40.0 ok     wall=   1.46s 
+   91/297 DFN   v=0.5  T= 0.0 ok     wall=   1.59s 
+   92/297 DFN   v=0.5  T=10.0 ok     wall=   1.47s 
+   93/297 DFN   v=0.5  T= 5.0 ok     wall=   1.42s 
+   94/297 DFN   v=0.5  T=15.0 ok     wall=   2.07s 
+   95/297 DFN   v=0.5  T=20.0 ok     wall=   2.05s 
+   96/297 DFN   v=0.5  T=25.0 ok     wall=   2.04s 
+   97/297 DFN   v=0.5  T=30.0 ok     wall=   1.49s 
+   98/297 DFN   v=0.5  T=35.0 ok     wall=   1.58s 
+   99/297 DFN   v=0.5  T=40.0 ok     wall=   1.59s 
+  100/297 SPM   v=3.0  T= 0.0 ok     wall=   0.34s 
+  101/297 SPM   v=3.0  T= 5.0 ok     wall=   0.38s 
+  102/297 SPM   v=3.0  T=10.0 ok     wall=   0.32s 
+2026-11-18 06:42:10.719 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:5740][IDAHandleFailure] At t = 22.1468326142491 and h = 1.26559528140429e-11, the error test failed repeatedly or with |h| = hmin.
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:3122][IDAGetDky] Illegal value for k.
+2026-11-18 06:42:10.859 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+  103/297 SPMe  v=3.0  T= 0.0 failed wall=   1.06s stopped at t=21 s before end of CV (solver failure)
+  104/297 SPMe  v=3.0  T= 5.0 failed wall=   0.97s stopped at t=22 s before end of CV (solver failure)
+  105/297 SPM   v=3.0  T=15.0 ok     wall=   0.33s 
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:5740][IDAHandleFailure] At t = 23.2576032207385 and h = 1.47450355780398e-11, the error test failed repeatedly or with |h| = hmin.
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:3122][IDAGetDky] Illegal value for k.
+2026-11-18 06:42:11.602 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+  106/297 SPMe  v=3.0  T=10.0 failed wall=   0.94s stopped at t=23 s before end of CV (solver failure)
+  107/297 SPM   v=3.0  T=20.0 ok     wall=   0.35s 
+2026-11-18 06:42:12.205 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  108/297 SPM   v=3.0  T=25.0 ok     wall=   0.32s 
+  109/297 SPMe  v=3.0  T=15.0 failed wall=   1.12s stopped at t=25 s before end of CV (solver failure)
+  110/297 SPM   v=3.0  T=30.0 ok     wall=   0.32s 
+2026-11-18 06:42:12.915 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  111/297 SPMe  v=3.0  T=20.0 failed wall=   1.09s stopped at t=27 s before end of CV (solver failure)
+2026-11-18 06:42:13.500 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  112/297 SPM   v=3.0  T=35.0 ok     wall=   0.33s 
+  113/297 SPMe  v=3.0  T=25.0 failed wall=   1.09s stopped at t=30 s before end of CV (solver failure)
+2026-11-18 06:42:13.986 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  114/297 SPMe  v=3.0  T=30.0 failed wall=   1.08s stopped at t=36 s before end of CV (solver failure)
+  115/297 SPM   v=3.0  T=40.0 ok     wall=   0.38s 
+2026-11-18 06:42:14.754 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  116/297 SPMe  v=3.0  T=35.0 failed wall=   1.13s stopped at t=51 s before end of CV (solver failure)
+  117/297 SPM   v=2.75 T= 0.0 ok     wall=   0.77s 
+  118/297 SPM   v=2.75 T= 5.0 ok     wall=   0.34s 
+  119/297 SPMe  v=3.0  T=40.0 ok     wall=   0.98s 
+  120/297 SPM   v=2.75 T=10.0 ok     wall=   0.32s 
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:5740][IDAHandleFailure] At t = 23.8111307397753 and h = 1.31850969579787e-11, the error test failed repeatedly or with |h| = hmin.
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:3122][IDAGetDky] Illegal value for k.
+2026-11-18 06:42:16.474 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+  121/297 SPMe  v=2.75 T= 0.0 failed wall=   1.47s stopped at t=24 s before end of CV (solver failure)
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:5740][IDAHandleFailure] At t = 24.9409219522659 and h = 1.52438800067704e-11, the error test failed repeatedly or with |h| = hmin.
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:3122][IDAGetDky] Illegal value for k.
+2026-11-18 06:42:16.756 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+  122/297 SPMe  v=2.75 T= 5.0 failed wall=   1.03s stopped at t=25 s before end of CV (solver failure)
+  123/297 SPM   v=2.75 T=15.0 ok     wall=   0.32s 
+2026-11-18 06:42:17.576 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  124/297 SPM   v=2.75 T=20.0 ok     wall=   0.33s 
+  125/297 SPMe  v=2.75 T=10.0 failed wall=   1.08s stopped at t=26 s before end of CV (solver failure)
+2026-11-18 06:42:18.116 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  126/297 SPM   v=2.75 T=25.0 ok     wall=   0.32s 
+  127/297 SPMe  v=2.75 T=15.0 failed wall=   1.14s stopped at t=29 s before end of CV (solver failure)
+2026-11-18 06:42:18.753 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  128/297 SPM   v=2.75 T=30.0 ok     wall=   0.34s 
+  129/297 SPMe  v=2.75 T=20.0 failed wall=   1.10s stopped at t=32 s before end of CV (solver failure)
+2026-11-18 06:42:19.287 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  130/297 SPM   v=2.75 T=35.0 ok     wall=   0.32s 
+  131/297 SPMe  v=2.75 T=25.0 failed wall=   1.02s stopped at t=37 s before end of CV (solver failure)
+2026-11-18 06:42:19.837 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  132/297 SPM   v=2.75 T=40.0 ok     wall=   0.32s 
+  133/297 SPMe  v=2.75 T=30.0 failed wall=   1.01s stopped at t=50 s before end of CV (solver failure)
+  134/297 SPM   v=2.5  T= 0.0 ok     wall=   0.31s 
+  135/297 SPMe  v=2.75 T=35.0 ok     wall=   0.98s 
+  136/297 SPM   v=2.5  T= 5.0 ok     wall=   0.32s 
+  137/297 SPMe  v=2.75 T=40.0 ok     wall=   0.95s 
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:5740][IDAHandleFailure] At t = 27.0436899470406 and h = 1.60540468248853e-11, the error test failed repeatedly or with |h| = hmin.
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:3122][IDAGetDky] Illegal value for k.
+2026-11-18 06:42:21.496 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+  138/297 SPMe  v=2.5  T= 0.0 failed wall=   0.97s stopped at t=27 s before end of CV (solver failure)
+  139/297 SPM   v=2.5  T=10.0 ok     wall=   0.31s 
+  140/297 SPM   v=2.5  T=15.0 ok     wall=   0.76s 
+2026-11-18 06:42:22.839 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  141/297 SPMe  v=2.5  T= 5.0 failed wall=   1.55s stopped at t=29 s before end of CV (solver failure)
+2026-11-18 06:42:23.209 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  142/297 SPMe  v=2.5  T=10.0 failed wall=   1.50s stopped at t=31 s before end of CV (solver failure)
+  143/297 SPM   v=2.5  T=20.0 ok     wall=   0.35s 
+2026-11-18 06:42:23.735 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  144/297 SPMe  v=2.5  T=15.0 failed wall=   1.05s stopped at t=34 s before end of CV (solver failure)
+  145/297 SPM   v=2.5  T=25.0 ok     wall=   0.34s 
+2026-11-18 06:42:24.462 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  146/297 SPM   v=2.5  T=30.0 ok     wall=   0.33s 
+  147/297 SPMe  v=2.5  T=20.0 failed wall=   1.04s stopped at t=40 s before end of CV (solver failure)
+2026-11-18 06:42:25.078 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  148/297 SPM   v=2.5  T=35.0 ok     wall=   0.35s 
+  149/297 SPMe  v=2.5  T=25.0 failed wall=   1.11s stopped at t=52 s before end of CV (solver failure)
+  150/297 SPM   v=2.5  T=40.0 ok     wall=   0.42s 
+  151/297 SPMe  v=2.5  T=30.0 ok     wall=   1.09s 
+  152/297 SPM   v=2.25 T= 0.0 ok     wall=   0.37s 
+  153/297 SPMe  v=2.5  T=35.0 ok     wall=   1.14s 
+  154/297 SPMe  v=2.5  T=40.0 ok     wall=   1.00s 
+  155/297 SPM   v=2.25 T= 5.0 ok     wall=   0.33s 
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:5740][IDAHandleFailure] At t = 31.3891652271169 and h = 2.05025860070356e-11, the error test failed repeatedly or with |h| = hmin.
+[ERROR][rank 0][/project/sundials/src/idas/idas.c:3122][IDAGetDky] Illegal value for k.
+2026-11-18 06:42:27.756 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDAGetDky: IDA_BAD_K: The k-th derivative is not available (flag: -25)
+  156/297 SPM   v=2.25 T=10.0 ok     wall=   0.32s 
+  157/297 SPMe  v=2.25 T= 0.0 failed wall=   1.08s stopped at t=31 s before end of CV (solver failure)
+2026-11-18 06:42:28.352 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  158/297 SPM   v=2.25 T=15.0 ok     wall=   0.34s 
+  159/297 SPMe  v=2.25 T= 5.0 failed wall=   1.03s stopped at t=34 s before end of CV (solver failure)
+2026-11-18 06:42:28.968 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  160/297 SPM   v=2.25 T=20.0 ok     wall=   0.31s 
+  161/297 SPMe  v=2.25 T=10.0 failed wall=   1.16s stopped at t=38 s before end of CV (solver failure)
+2026-11-18 06:42:29.952 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  162/297 SPMe  v=2.25 T=15.0 failed wall=   1.45s stopped at t=43 s before end of CV (solver failure)
+  163/297 SPM   v=2.25 T=25.0 ok     wall=   0.83s 
+2026-11-18 06:42:30.607 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  164/297 SPM   v=2.25 T=30.0 ok     wall=   0.34s 
+  165/297 SPMe  v=2.25 T=20.0 failed wall=   1.58s stopped at t=56 s before end of CV (solver failure)
+  166/297 SPM   v=2.25 T=35.0 ok     wall=   0.38s 
+  167/297 SPMe  v=2.25 T=25.0 ok     wall=   1.03s 
+  168/297 SPM   v=2.25 T=40.0 ok     wall=   0.34s 
+  169/297 SPMe  v=2.25 T=30.0 ok     wall=   1.06s 
+  170/297 SPM   v=2.0  T= 0.0 ok     wall=   0.33s 
+  171/297 SPMe  v=2.25 T=35.0 ok     wall=   1.00s 
+  172/297 SPM   v=2.0  T= 5.0 ok     wall=   0.32s 
+  173/297 SPMe  v=2.25 T=40.0 ok     wall=   1.05s 
+2026-11-18 06:42:33.805 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  174/297 SPMe  v=2.0  T= 0.0 failed wall=   1.10s stopped at t=38 s before end of CV (solver failure)
+  175/297 SPM   v=2.0  T=10.0 ok     wall=   0.32s 
+2026-11-18 06:42:34.328 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  176/297 SPMe  v=2.0  T= 5.0 failed wall=   1.08s stopped at t=42 s before end of CV (solver failure)
+  177/297 SPM   v=2.0  T=15.0 ok     wall=   0.32s 
+  178/297 SPM   v=2.0  T=20.0 ok     wall=   0.35s 
+2026-11-18 06:42:35.123 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  179/297 SPMe  v=2.0  T=10.0 failed wall=   1.10s stopped at t=48 s before end of CV (solver failure)
+2026-11-18 06:42:35.600 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  180/297 SPMe  v=2.0  T=15.0 failed wall=   1.06s stopped at t=62 s before end of CV (solver failure)
+  181/297 SPM   v=2.0  T=25.0 ok     wall=   0.32s 
+  182/297 SPM   v=2.0  T=30.0 ok     wall=   0.32s 
+  183/297 SPMe  v=2.0  T=20.0 ok     wall=   0.98s 
+  184/297 SPMe  v=2.0  T=25.0 ok     wall=   0.95s 
+  185/297 SPM   v=2.0  T=35.0 ok     wall=   0.32s 
+  186/297 SPM   v=2.0  T=40.0 ok     wall=   0.32s 
+  187/297 SPMe  v=2.0  T=30.0 ok     wall=   1.41s 
+  188/297 SPM   v=1.75 T= 0.0 ok     wall=   0.33s 
+  189/297 SPMe  v=2.0  T=35.0 ok     wall=   1.38s 
+  190/297 SPMe  v=2.0  T=40.0 ok     wall=   1.03s 
+  191/297 SPM   v=1.75 T= 5.0 ok     wall=   0.35s 
+2026-11-18 06:42:39.848 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  192/297 SPM   v=1.75 T=10.0 ok     wall=   0.35s 
+  193/297 SPMe  v=1.75 T= 0.0 failed wall=   1.18s stopped at t=48 s before end of CV (solver failure)
+2026-11-18 06:42:40.317 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  194/297 SPMe  v=1.75 T= 5.0 failed wall=   1.13s stopped at t=56 s before end of CV (solver failure)
+  195/297 SPM   v=1.75 T=15.0 ok     wall=   0.34s 
+  196/297 SPM   v=1.75 T=20.0 ok     wall=   0.34s 
+2026-11-18 06:42:41.115 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  197/297 SPMe  v=1.75 T=10.0 failed wall=   1.12s stopped at t=74 s before end of CV (solver failure)
+  198/297 SPM   v=1.75 T=25.0 ok     wall=   0.32s 
+  199/297 SPMe  v=1.75 T=15.0 ok     wall=   1.00s 
+  200/297 SPM   v=1.75 T=30.0 ok     wall=   0.33s 
+  201/297 SPMe  v=1.75 T=20.0 ok     wall=   1.01s 
+  202/297 SPM   v=1.75 T=35.0 ok     wall=   0.32s 
+  203/297 SPMe  v=1.75 T=25.0 ok     wall=   0.98s 
+  204/297 SPM   v=1.75 T=40.0 ok     wall=   0.39s 
+  205/297 SPMe  v=1.75 T=30.0 ok     wall=   0.97s 
+  206/297 SPM   v=1.5  T= 0.0 ok     wall=   0.68s 
+  207/297 SPMe  v=1.75 T=35.0 ok     wall=   0.99s 
+  208/297 SPMe  v=1.75 T=40.0 ok     wall=   1.01s 
+  209/297 SPM   v=1.5  T= 5.0 ok     wall=   0.33s 
+  210/297 SPM   v=1.5  T=10.0 ok     wall=   0.32s 
+2026-11-18 06:42:45.663 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  211/297 SPMe  v=1.5  T= 0.0 failed wall=   1.01s stopped at t=67 s before end of CV (solver failure)
+  212/297 SPM   v=1.5  T=15.0 ok     wall=   0.32s 
+2026-11-18 06:42:46.532 - [ERROR] callbacks.on_experiment_error(226): Simulation error: input set 0: IDA_ERR_FAIL: Error test failures occurred too many times during one step or minimum step size was reached
+  213/297 SPMe  v=1.5  T= 5.0 failed wall=   1.04s stopped at t=100 s before end of CV (solver failure)
+  214/297 SPMe  v=1.5  T=10.0 ok     wall=   1.00s 
+  215/297 SPM   v=1.5  T=20.0 ok     wall=   0.33s 
+  216/297 SPMe  v=1.5  T=15.0 ok     wall=   0.96s 
+  217/297 SPM   v=1.5  T=25.0 ok     wall=   0.42s 
+  218/297 SPM   v=1.5  T=30.0 ok     wall=   0.33s 
+  219/297 SPMe  v=1.5  T=20.0 ok     wall=   1.09s 
+  220/297 SPM   v=1.5  T=35.0 ok     wall=   0.36s 
+  221/297 SPMe  v=1.5  T=25.0 ok     wall=   0.99s 
+  222/297 SPM   v=1.5  T=40.0 ok     wall=   0.33s 
+  223/297 SPMe  v=1.5  T=30.0 ok     wall=   0.97s 
+  224/297 SPM   v=1.25 T= 0.0 ok     wall=   0.33s 
+  225/297 SPMe  v=1.5  T=35.0 ok     wall=   1.09s 
+  226/297 SPMe  v=1.5  T=40.0 ok     wall=   1.04s 
+  227/297 SPM   v=1.25 T= 5.0 ok     wall=   0.33s 
+  228/297 SPMe  v=1.25 T= 0.0 ok     wall=   1.06s 
+  229/297 SPM   v=1.25 T=10.0 ok     wall=   0.79s 
+  230/297 SPM   v=1.25 T=15.0 ok     wall=   0.36s 
+  231/297 SPMe  v=1.25 T= 5.0 ok     wall=   1.41s 
+  232/297 SPM   v=1.25 T=20.0 ok     wall=   0.32s 
+  233/297 SPMe  v=1.25 T=10.0 ok     wall=   1.31s 
+  234/297 SPM   v=1.25 T=25.0 ok     wall=   0.32s 
+  235/297 SPMe  v=1.25 T=15.0 ok     wall=   0.98s 
+  236/297 SPM   v=1.25 T=30.0 ok     wall=   0.34s 
+  237/297 SPMe  v=1.25 T=20.0 ok     wall=   1.01s 
+  238/297 SPM   v=1.25 T=35.0 ok     wall=   0.31s 
+  239/297 SPMe  v=1.25 T=25.0 ok     wall=   1.06s 
+  240/297 SPM   v=1.25 T=40.0 ok     wall=   0.33s 
+  241/297 SPMe  v=1.25 T=30.0 ok     wall=   1.08s 
+  242/297 SPM   v=1.0  T= 0.0 ok     wall=   0.33s 
+  243/297 SPMe  v=1.25 T=35.0 ok     wall=   1.02s 
+  244/297 SPMe  v=1.25 T=40.0 ok     wall=   0.98s 
+  245/297 SPM   v=1.0  T= 5.0 ok     wall=   0.38s 
+  246/297 SPM   v=1.0  T=10.0 ok     wall=   0.32s 
+  247/297 SPMe  v=1.0  T= 0.0 ok     wall=   0.99s 
+  248/297 SPM   v=1.0  T=15.0 ok     wall=   0.32s 
+  249/297 SPMe  v=1.0  T= 5.0 ok     wall=   1.01s 
+  250/297 SPM   v=1.0  T=20.0 ok     wall=   0.32s 
+  251/297 SPMe  v=1.0  T=10.0 ok     wall=   1.34s 
+  252/297 SPM   v=1.0  T=25.0 ok     wall=   0.35s 
+  253/297 SPMe  v=1.0  T=15.0 ok     wall=   1.02s 
+  254/297 SPM   v=1.0  T=30.0 ok     wall=   0.37s 
+  255/297 SPMe  v=1.0  T=20.0 ok     wall=   1.35s 
+  256/297 SPM   v=1.0  T=35.0 ok     wall=   0.32s 
+  257/297 SPMe  v=1.0  T=25.0 ok     wall=   0.97s 
+  258/297 SPM   v=1.0  T=40.0 ok     wall=   0.32s 
+  259/297 SPMe  v=1.0  T=30.0 ok     wall=   1.13s 
+  260/297 SPM   v=0.75 T= 0.0 ok     wall=   0.32s 
+  261/297 SPMe  v=1.0  T=35.0 ok     wall=   0.97s 
+  262/297 SPM   v=0.75 T= 5.0 ok     wall=   0.32s 
+  263/297 SPMe  v=1.0  T=40.0 ok     wall=   1.02s 
+  264/297 SPM   v=0.75 T=10.0 ok     wall=   0.32s 
+  265/297 SPMe  v=0.75 T= 0.0 ok     wall=   1.08s 
+  266/297 SPMe  v=0.75 T= 5.0 ok     wall=   1.02s 
+  267/297 SPM   v=0.75 T=15.0 ok     wall=   0.34s 
+  268/297 SPMe  v=0.75 T=10.0 ok     wall=   1.01s 
+  269/297 SPM   v=0.75 T=20.0 ok     wall=   0.32s 
+  270/297 SPM   v=0.75 T=25.0 ok     wall=   0.57s 
+  271/297 SPMe  v=0.75 T=15.0 ok     wall=   1.02s 
+  272/297 SPM   v=0.75 T=30.0 ok     wall=   0.31s 
+  273/297 SPMe  v=0.75 T=20.0 ok     wall=   1.25s 
+  274/297 SPM   v=0.75 T=35.0 ok     wall=   0.31s 
+  275/297 SPMe  v=0.75 T=25.0 ok     wall=   1.02s 
+  276/297 SPM   v=0.75 T=40.0 ok     wall=   0.33s 
+  277/297 SPMe  v=0.75 T=30.0 ok     wall=   1.37s 
+  278/297 SPMe  v=0.75 T=35.0 ok     wall=   1.06s 
+  279/297 SPM   v=0.5  T= 0.0 ok     wall=   0.32s 
+  280/297 SPMe  v=0.75 T=40.0 ok     wall=   1.01s 
+  281/297 SPM   v=0.5  T= 5.0 ok     wall=   0.39s 
+  282/297 SPM   v=0.5  T=10.0 ok     wall=   0.40s 
+  283/297 SPMe  v=0.5  T= 0.0 ok     wall=   1.09s 
+  284/297 SPMe  v=0.5  T= 5.0 ok     wall=   1.00s 
+  285/297 SPM   v=0.5  T=15.0 ok     wall=   0.33s 
+  286/297 SPM   v=0.5  T=20.0 ok     wall=   0.41s 
+  287/297 SPMe  v=0.5  T=10.0 ok     wall=   1.07s 
+  288/297 SPM   v=0.5  T=25.0 ok     wall=   0.34s 
+  289/297 SPMe  v=0.5  T=15.0 ok     wall=   1.06s 
+  290/297 SPM   v=0.5  T=30.0 ok     wall=   0.33s 
+  291/297 SPMe  v=0.5  T=20.0 ok     wall=   1.06s 
+  292/297 SPM   v=0.5  T=35.0 ok     wall=   0.33s 
+  293/297 SPMe  v=0.5  T=25.0 ok     wall=   1.06s 
+  294/297 SPM   v=0.5  T=40.0 ok     wall=   0.31s 
+  295/297 SPMe  v=0.5  T=30.0 ok     wall=   1.47s 
+  296/297 SPMe  v=0.5  T=35.0 ok     wall=   1.02s 
+  297/297 SPMe  v=0.5  T=40.0 ok     wall=   1.29s 
+[charge] done in 132 s
+model  value  T_amb_C status  V_rmse_mV  V_rmse_cc_mV  Tpeak_err_K  t80_err_pct  class limiting_metric
+  SPM   0.50      0.0     ok  28.824454     40.845474    -2.124038     3.127543      2    V_rmse_cc_mV
+ SPMe   0.50      0.0     ok   3.460449      5.100395    -0.020045     0.494240      0                
+  SPM   0.50      5.0     ok  27.932788     37.567151    -1.863512     0.978163      1    V_rmse_cc_mV
+ SPMe   0.50      5.0     ok   3.273654      4.574080    -0.001940     0.174178      0                
+  SPM   0.50     10.0     ok  27.126804     34.673328    -1.650072     0.026559      1    V_rmse_cc_mV
+ SPMe   0.50     10.0     ok   2.994779      3.979670     0.016538     0.091235      0                
+  SPM   0.50     15.0     ok  26.294011     32.073797    -1.491654     0.099206      1    V_rmse_cc_mV
+ SPMe   0.50     15.0     ok   2.719847      3.435656     0.025877     0.099206      0                
+  SPM   0.50     20.0     ok  25.225668     29.730288    -1.392963     0.000000      1    V_rmse_cc_mV
+ SPMe   0.50     20.0     ok   2.462163      2.965641     0.027185     0.000000      0                
+  SPM   0.50     25.0     ok  23.954533     27.533262    -1.297554     0.000000      1    V_rmse_cc_mV
+ SPMe   0.50     25.0     ok   2.238455      2.612668     0.016519     0.099108      0                
+  SPM   0.50     30.0     ok  22.633947     25.497029    -1.203109     0.099108      1    V_rmse_cc_mV
+ SPMe   0.50     30.0     ok   2.050748      2.339545     0.009366     0.099108      0                
+  SPM   0.50     35.0     ok  21.337135     23.634833    -1.113728     0.000000      1    V_rmse_cc_mV
+ SPMe   0.50     35.0     ok   1.896983      2.124800     0.005149     0.099108      0                
+  SPM   0.50     40.0     ok  20.088420     21.946446    -1.032562     0.099206      1    V_rmse_cc_mV
+ SPMe   0.50     40.0     ok   1.773374      1.956840     0.002439     0.099206      0                
+  SPM   0.75      0.0     ok  31.726039     52.375017    -4.079017     5.765422      2    V_rmse_cc_mV
+ SPMe   0.75      0.0     ok   4.028308      6.945504     0.096121     1.311399      0                
+  SPM   0.75      5.0     ok  31.234399     48.369292    -3.750600     4.306162      2    V_rmse_cc_mV
+ SPMe   0.75      5.0     ok   3.865465      6.235342     0.028684     0.798104      0                
+  SPM   0.75     10.0     ok  30.690653     44.930678    -3.401840     2.181799      2    V_rmse_cc_mV
+ SPMe   0.75     10.0     ok   3.829579      5.828505     0.006128     0.394744      0                
+  SPM   0.75     15.0     ok  30.175274     41.934531    -3.086978     0.784334      2    V_rmse_cc_mV
+ SPMe   0.75     15.0     ok   3.669350      5.302420     0.013824     0.265974      0                
+  SPM   0.75     20.0     ok  29.683996     39.244279    -2.814074     0.074809      1    V_rmse_cc_mV
+ SPMe   0.75     20.0     ok   3.430420      4.721359     0.027448     0.076352      0                
+  SPM   0.75     25.0     ok  29.146937     36.793310    -2.594367     0.000000      1    V_rmse_cc_mV
+ SPMe   0.75     25.0     ok   3.185594      4.178916     0.034388     0.000000      0                
+  SPM   0.75     30.0     ok  28.411966     34.563278    -2.440087     0.148810      1    V_rmse_cc_mV
+ SPMe   0.75     30.0     ok   2.953351      3.691688     0.040023     0.000000      0                
+  SPM   0.75     35.0     ok  27.432765     32.467407    -2.301645     0.000000      1    V_rmse_cc_mV
+ SPMe   0.75     35.0     ok   2.743589      3.310621     0.027297     0.000000      0                
+  SPM   0.75     40.0     ok  26.346260     30.490359    -2.162288     0.000000      1    V_rmse_cc_mV
+ SPMe   0.75     40.0     ok   2.562015      3.013197     0.016228     0.000000      0                
+  SPM   1.00      0.0     ok  33.410689     62.111067    -6.080355     6.045121      2    V_rmse_cc_mV
+ SPMe   1.00      0.0     ok   5.107643      9.906839     0.359507     1.552882      0                
+  SPM   1.00      5.0     ok  33.250427     57.501410    -5.683301     5.300968      2    V_rmse_cc_mV
+ SPMe   1.00      5.0     ok   4.585310      8.265516     0.203581     1.441835      0                
+  SPM   1.00     10.0     ok  33.000115     53.474551    -5.276658     4.209946      2    V_rmse_cc_mV
+ SPMe   1.00     10.0     ok   4.293952      7.235124     0.101038     1.038692      0                
+  SPM   1.00     15.0     ok  32.660047     49.974465    -4.860295     2.338035      2    V_rmse_cc_mV
+ SPMe   1.00     15.0     ok   4.201566      6.668034     0.049106     0.571071      0                
+  SPM   1.00     20.0     ok  32.341359     46.970593    -4.490653     1.188467      2    V_rmse_cc_mV
+ SPMe   1.00     20.0     ok   4.087675      6.160313     0.037723     0.196009      0                
+  SPM   1.00     25.0     ok  32.034254     44.291410    -4.160021     0.437193      2    V_rmse_cc_mV
+ SPMe   1.00     25.0     ok   3.888813      5.586094     0.043728     0.012926      0                
+  SPM   1.00     30.0     ok  31.707402     41.847549    -3.876322     0.000000      2    V_rmse_cc_mV
+ SPMe   1.00     30.0     ok   3.660401      5.026660     0.049446     0.030609      0                
+  SPM   1.00     35.0     ok  31.285427     39.600400    -3.653938     0.000000      1    V_rmse_cc_mV
+ SPMe   1.00     35.0     ok   3.440152      4.514084     0.050874     0.198413      0                
+  SPM   1.00     40.0     ok  30.649438     37.533281    -3.485604     0.000000      1    V_rmse_cc_mV
+ SPMe   1.00     40.0     ok   3.231728      4.061642     0.050294     0.000000      0                
+  SPM   1.25      0.0     ok  35.037661     71.777699    -8.111558     5.130449      2    V_rmse_cc_mV
+ SPMe   1.25      0.0     ok   7.631240     16.106541     0.750316     1.384460      0                
+  SPM   1.25      5.0     ok  34.944490     66.093458    -7.638680     5.188223      2    V_rmse_cc_mV
+ SPMe   1.25      5.0     ok   5.887455     11.547040     0.476362     1.441454      0                
+  SPM   1.25     10.0     ok  34.829032     61.342984    -7.165305     4.617020      2    V_rmse_cc_mV
+ SPMe   1.25     10.0     ok   5.137690      9.381495     0.285841     1.189676      0                
+  SPM   1.25     15.0     ok  34.681352     57.325801    -6.669971     3.858732      2    V_rmse_cc_mV
+ SPMe   1.25     15.0     ok   4.737117      8.106942     0.162227     0.700298      0                
+  SPM   1.25     20.0     ok  34.470402     53.893331    -6.203712     2.147766      2    V_rmse_cc_mV
+ SPMe   1.25     20.0     ok   4.559295      7.370984     0.095032     0.572292      0                
+  SPM   1.25     25.0     ok  34.258499     50.890505    -5.798975     1.071211      2    V_rmse_cc_mV
+ SPMe   1.25     25.0     ok   4.421715      6.792462     0.072771     0.176877      0                
+  SPM   1.25     30.0     ok  34.068735     48.247189    -5.433513     0.141580      2    V_rmse_cc_mV
+ SPMe   1.25     30.0     ok   4.227378      6.207786     0.072251     0.094718      0                
+  SPM   1.25     35.0     ok  33.861094     45.835637    -5.118238     0.038723      2    V_rmse_cc_mV
+ SPMe   1.25     35.0     ok   4.010341      5.639725     0.073985     0.086598      0                
+  SPM   1.25     40.0     ok  33.587387     43.606192    -4.860965     0.000000      2    V_rmse_cc_mV
+ SPMe   1.25     40.0     ok   3.795009      5.117799     0.070959     0.000000      0                
+  SPM   1.50      0.0     ok  36.876193     81.880602   -10.170970     3.487303      2    V_rmse_cc_mV
+ SPMe   1.50      0.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   1.50      5.0     ok  36.717126     74.844373    -9.610417     4.033471      2    V_rmse_cc_mV
+ SPMe   1.50      5.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   1.50     10.0     ok  36.597933     69.138161    -9.065575     4.154254      2    V_rmse_cc_mV
+ SPMe   1.50     10.0     ok   6.754670     13.135466     0.552770     1.343594      0                
+  SPM   1.50     15.0     ok  36.514626     64.463531    -8.503808     4.212516      2    V_rmse_cc_mV
+ SPMe   1.50     15.0     ok   5.689113     10.344707     0.340927     0.826849      0                
+  SPM   1.50     20.0     ok  36.379248     60.503150    -7.925446     2.983962      2    V_rmse_cc_mV
+ SPMe   1.50     20.0     ok   5.165867      8.846210     0.208288     0.805828      0                
+  SPM   1.50     25.0     ok  36.233667     57.098333    -7.438939     1.693476      2    V_rmse_cc_mV
+ SPMe   1.50     25.0     ok   4.901281      7.951446     0.136421     0.437604      0                
+  SPM   1.50     30.0     ok  36.085542     54.143545    -7.012099     0.714424      2    V_rmse_cc_mV
+ SPMe   1.50     30.0     ok   4.711471      7.285536     0.110486     0.159963      0                
+  SPM   1.50     35.0     ok  35.970041     51.551719    -6.628573     0.501949      2    V_rmse_cc_mV
+ SPMe   1.50     35.0     ok   4.505274      6.672145     0.106401     0.029907      0                
+  SPM   1.50     40.0     ok  35.845969     49.176019    -6.295421     0.195397      2    V_rmse_cc_mV
+ SPMe   1.50     40.0     ok   4.283118      6.093192     0.104267     0.063089      0                
+  SPM   1.75      0.0     ok  38.824378     92.536835   -12.274137     1.707428      2    V_rmse_cc_mV
+ SPMe   1.75      0.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   1.75      5.0     ok  38.636910     84.080151   -11.602159     2.793257      2    V_rmse_cc_mV
+ SPMe   1.75      5.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   1.75     10.0     ok  38.473524     77.269953   -10.977054     3.493764      2    V_rmse_cc_mV
+ SPMe   1.75     10.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   1.75     15.0     ok  38.331408     71.624216   -10.345886     3.888545      2    V_rmse_cc_mV
+ SPMe   1.75     15.0     ok   7.624698     14.552705     0.594517     0.857781      0                
+  SPM   1.75     20.0     ok  38.246579     67.063093    -9.678945     3.580176      2    V_rmse_cc_mV
+ SPMe   1.75     20.0     ok   6.201695     11.131609     0.375315     0.925073      0                
+  SPM   1.75     25.0     ok  38.108961     63.125189    -9.072468     2.584828      2    V_rmse_cc_mV
+ SPMe   1.75     25.0     ok   5.557823      9.425335     0.243929     0.490466      0                
+  SPM   1.75     30.0     ok  38.011660     59.863057    -8.581128     1.332394      2    V_rmse_cc_mV
+ SPMe   1.75     30.0     ok   5.210772      8.416684     0.174341     0.483296      0                
+  SPM   1.75     35.0     ok  37.903360     56.964924    -8.141320     0.520261      2    V_rmse_cc_mV
+ SPMe   1.75     35.0     ok   4.968319      7.669919     0.149504     0.103216      0                
+  SPM   1.75     40.0     ok  37.817459     54.433322    -7.747699     0.049604      2    V_rmse_cc_mV
+ SPMe   1.75     40.0     ok   4.734705      7.027246     0.143182     0.140218      0                
+  SPM   2.00      0.0     ok  40.864465    103.411091   -14.439565     0.483214      2    V_rmse_cc_mV
+ SPMe   2.00      0.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.00      5.0     ok  40.574766     93.461293   -13.619782     1.650163      2    V_rmse_cc_mV
+ SPMe   2.00      5.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.00     10.0     ok  40.425966     85.679909   -12.900847     2.731723      2    V_rmse_cc_mV
+ SPMe   2.00     10.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.00     15.0     ok  40.223338     79.021086   -12.196235     3.330030      2    V_rmse_cc_mV
+ SPMe   2.00     15.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.00     20.0     ok  40.098174     73.683667   -11.455143     3.401860      2    V_rmse_cc_mV
+ SPMe   2.00     20.0     ok   8.354385     15.582379     0.612818     0.660261      0                
+  SPM   2.00     25.0     ok  39.979477     69.272503   -10.722089     2.959808      2    V_rmse_cc_mV
+ SPMe   2.00     25.0     ok   6.639775     11.706730     0.398124     0.689792      0                
+  SPM   2.00     30.0     ok  39.856214     65.460631   -10.138340     2.118433      2    V_rmse_cc_mV
+ SPMe   2.00     30.0     ok   5.890176      9.862297     0.273795     0.787640      0                
+  SPM   2.00     35.0     ok  39.743820     62.235662    -9.645049     1.284569      2    V_rmse_cc_mV
+ SPMe   2.00     35.0     ok   5.471801      8.753723     0.210661     0.458617      0                
+  SPM   2.00     40.0     ok  39.680596     59.465174    -9.199045     0.566211      2    V_rmse_cc_mV
+ SPMe   2.00     40.0     ok   5.181007      7.958377     0.188655     0.375226      0                
+  SPM   2.25      0.0     ok  43.339884    115.607655   -16.690603     2.634578      2    V_rmse_cc_mV
+ SPMe   2.25      0.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.25      5.0     ok  42.596181    103.252184   -15.673401     0.190695      2    V_rmse_cc_mV
+ SPMe   2.25      5.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.25     10.0     ok  42.367840     94.243300   -14.840585     1.475047      2    V_rmse_cc_mV
+ SPMe   2.25     10.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.25     15.0     ok  42.162494     86.633511   -14.054118     2.337121      2    V_rmse_cc_mV
+ SPMe   2.25     15.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.25     20.0     ok  42.004545     80.525258   -13.241259     3.160916      2    V_rmse_cc_mV
+ SPMe   2.25     20.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.25     25.0     ok  41.843316     75.493990   -12.400668     3.211064      2    V_rmse_cc_mV
+ SPMe   2.25     25.0     ok   8.836647     16.091586     0.618229     0.528561      0                
+  SPM   2.25     30.0     ok  41.717839     71.182736   -11.694650     2.462193      2    V_rmse_cc_mV
+ SPMe   2.25     30.0     ok   6.970289     12.052757     0.416373     0.411722      0                
+  SPM   2.25     35.0     ok  41.580613     67.594143   -11.134471     1.716248      2    V_rmse_cc_mV
+ SPMe   2.25     35.0     ok   6.158451     10.162938     0.302313     0.241933      0                
+  SPM   2.25     40.0     ok  41.487759     64.441777   -10.641625     0.655909      2    V_rmse_cc_mV
+ SPMe   2.25     40.0     ok   5.686181      8.999119     0.247275     0.354193      0                
+  SPM   2.50      0.0     ok  46.746272    128.949332   -19.053047     5.610299      2    V_rmse_cc_mV
+ SPMe   2.50      0.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.50      5.0     ok  45.213934    113.749257   -17.772798     1.925651      2    V_rmse_cc_mV
+ SPMe   2.50      5.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.50     10.0     ok  44.365386    102.770400   -16.800268     0.238310      2    V_rmse_cc_mV
+ SPMe   2.50     10.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.50     15.0     ok  44.124188     94.532856   -15.920697     1.633132      2    V_rmse_cc_mV
+ SPMe   2.50     15.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.50     20.0     ok  43.905072     87.458581   -15.034065     2.541809      2    V_rmse_cc_mV
+ SPMe   2.50     20.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.50     25.0     ok  43.742825     81.842242   -14.102166     3.136576      2    V_rmse_cc_mV
+ SPMe   2.50     25.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.50     30.0     ok  43.543342     76.824843   -13.266349     3.119803      2    V_rmse_cc_mV
+ SPMe   2.50     30.0     ok   9.039057     16.032717     0.616714     0.477479      0                
+  SPM   2.50     35.0     ok  43.410266     72.887568   -12.616998     2.248013      2    V_rmse_cc_mV
+ SPMe   2.50     35.0     ok   7.190177     12.190090     0.432077     0.090439      0                
+  SPM   2.50     40.0     ok  43.289541     69.453223   -12.071599     1.343450      2    V_rmse_cc_mV
+ SPMe   2.50     40.0     ok   6.351835     10.317182     0.331052     0.010122      0                
+  SPM   2.75      0.0     ok  50.431481    143.192966   -21.552772     9.082900      2    V_rmse_cc_mV
+ SPMe   2.75      0.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.75      5.0     ok  48.414018    125.025461   -19.936892     3.811243      2    V_rmse_cc_mV
+ SPMe   2.75      5.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.75     10.0     ok  47.054301    111.942778   -18.785677     0.800891      2    V_rmse_cc_mV
+ SPMe   2.75     10.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.75     15.0     ok  46.243767    102.277053   -17.797986     1.063563      2    V_rmse_cc_mV
+ SPMe   2.75     15.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.75     20.0     ok  45.862449     94.853738   -16.832092     1.808632      2    V_rmse_cc_mV
+ SPMe   2.75     20.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.75     25.0     ok  45.622313     88.138057   -15.817802     3.157274      2    V_rmse_cc_mV
+ SPMe   2.75     25.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.75     30.0     ok  45.414031     82.875599   -14.861417     2.813585      2    V_rmse_cc_mV
+ SPMe   2.75     30.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   2.75     35.0     ok  45.245494     78.351130   -14.100290     2.719785      2    V_rmse_cc_mV
+ SPMe   2.75     35.0     ok   9.042684     15.694190     0.612870     0.026507      0                
+  SPM   2.75     40.0     ok  45.101549     74.444345   -13.490703     1.395823      2    V_rmse_cc_mV
+ SPMe   2.75     40.0     ok   7.313576     12.157516     0.448114     0.245262      0                
+  SPM   3.00      0.0     ok  54.386624    158.469594   -24.195736    12.678347      2    V_rmse_cc_mV
+ SPMe   3.00      0.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   3.00      5.0     ok  51.908065    137.246909   -22.195712     5.866490      2    V_rmse_cc_mV
+ SPMe   3.00      5.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   3.00     10.0     ok  50.011145    122.061657   -20.805490     2.498054      2    V_rmse_cc_mV
+ SPMe   3.00     10.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   3.00     15.0     ok  48.764926    110.473725   -19.688617     0.271935      2    V_rmse_cc_mV
+ SPMe   3.00     15.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   3.00     20.0     ok  47.993975    102.008989   -18.634974     1.180267      2    V_rmse_cc_mV
+ SPMe   3.00     20.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   3.00     25.0     ok  47.520891     94.771965   -17.541631     2.564010      2    V_rmse_cc_mV
+ SPMe   3.00     25.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   3.00     30.0     ok  47.298123     88.812562   -16.477580     2.624699      2    V_rmse_cc_mV
+ SPMe   3.00     30.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   3.00     35.0     ok  47.051319     83.681090   -15.593537     2.355096      2    V_rmse_cc_mV
+ SPMe   3.00     35.0 failed        NaN           NaN          NaN          NaN      3  solver failure
+  SPM   3.00     40.0     ok  46.864026     79.507510   -14.903933     1.479448      2    V_rmse_cc_mV
+ SPMe   3.00     40.0     ok   8.896346     15.103766     0.610221     0.590068      0                

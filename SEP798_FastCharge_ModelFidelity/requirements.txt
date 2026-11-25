@@ -1,0 +1,7 @@
+casadi==3.8.1
+matplotlib==3.11.2
+numpy==2.5.3
+pandas==3.0.5
+pybamm==26.10.1.1
+pybammsolvers==0.11.1
+scipy==1.18.1

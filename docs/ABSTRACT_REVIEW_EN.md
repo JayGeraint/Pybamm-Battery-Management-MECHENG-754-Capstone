@@ -8,13 +8,13 @@ Proceed with Option A from the final part of the shared conversation: compare SP
 
 **Accuracy and Computational Cost of Electrochemical Models for Lithium Ion Battery Fast Charging in PyBaMM**
 
-The proposed title matches the implemented study. A control claim would require a controller and closed-loop evaluation. A 15-minute claim must specify the SOC window and demonstrate the target. The deployed study starts at 10% SOC and examines 0.5–3C CC-CV charging without presupposing a 15-minute result. For a 10–80% window, the ideal average current is 0.7/0.25 = 2.8C, before accounting for CV tapering. A 3C current limit alone therefore does not demonstrate the target.
+The proposed title matches the implemented study. A control claim would require a controller and closed-loop evaluation. A 15-minute claim must specify the SOC window and demonstrate the target. The deployed study starts at 10% SOC and examines 0.5–3C CC-CV charging without presupposing a 15-minute result. Using the current electrode-window capacity of about 5.153198 Ah, the ideal 10–80% average current over 15 minutes is about 14.429 A, or 2.886C with 1C = 5 A, before accounting for CV tapering. The older 2.8C estimate applies to the 5 Ah nominal-capacity proxy. A 3C current limit alone therefore does not demonstrate the target.
 
 ## Specific revisions
 
 | Current claim | Revision and reason |
 |---|---|
-| SEI growth and unusual capacity degradation | Move to future work. The main model includes neither SEI growth nor plating kinetics and cannot predict capacity fade. |
+| SEI growth and unusual capacity degradation | The fidelity benchmark has no side reactions. The separate November 24 demo enables SEI and plating for one charge; it does not establish calibrated capacity fade or cycle life. |
 | Identifiability analysis of degradation parameters | Remove from the current scope. Published Chen2020 parameters are used without degradation fitting. |
 | DFN was calibrated against capacity and IC | Do not present unperformed calibration as completed work. The deployment reproduces a published parameter set and compares outputs with data. |
 | Lithium deposition rate and knee-point cycle | Remove. Potential indicators do not provide deposition rates or lifetime predictions. |

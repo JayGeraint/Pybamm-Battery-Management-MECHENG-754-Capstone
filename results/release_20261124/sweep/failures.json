@@ -1,0 +1,35 @@
+[
+  {
+    "case": "SPMe_3C_10degC",
+    "model": "SPMe",
+    "rate_c": 3.0,
+    "ambient_c": 10.0,
+    "status": "failed",
+    "error": "RunRejected('Nonphysical electrolyte concentration: minimum -4.20791 mol/m3')",
+    "run_category": "physical_failure",
+    "parameter_variant": "Chen2020",
+    "soc_definition": "electrode_window"
+  },
+  {
+    "case": "SPMe_3C_25degC",
+    "model": "SPMe",
+    "rate_c": 3.0,
+    "ambient_c": 25.0,
+    "status": "failed",
+    "error": "RunRejected('Nonphysical electrolyte concentration: minimum -4.83518 mol/m3')",
+    "run_category": "physical_failure",
+    "parameter_variant": "Chen2020",
+    "soc_definition": "electrode_window"
+  },
+  {
+    "case": "SPMe_3C_40degC",
+    "model": "SPMe",
+    "rate_c": 3.0,
+    "ambient_c": 40.0,
+    "status": "failed",
+    "error": "RunRejected('Nonphysical electrolyte concentration: minimum -6.92201 mol/m3')",
+    "run_category": "physical_failure",
+    "parameter_variant": "Chen2020",
+    "soc_definition": "electrode_window"
+  }
+]

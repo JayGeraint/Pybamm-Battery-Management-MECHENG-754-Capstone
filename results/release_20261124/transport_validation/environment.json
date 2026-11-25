@@ -1,0 +1,38 @@
+{
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "logical_cpu_count": 20,
+  "packages": {
+    "pybamm": "26.10.1.1",
+    "pybammsolvers": "0.11.1",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9"
+  },
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "source_sha256": {
+    "audit_physics.py": "ad14e928eb9cd78ef7ecd6bcac45f4949582dabe54fd93f9a5a6784a48d08b88",
+    "configs/baseline.json": "e962ebbcbc31551b442a1231b2c4e6753fce991308637a87f96787883774d0cf",
+    "configs/core.json": "42b5c3f04b227a6cdf70b61cc1e37b47125b63cd6ec867dd75016b78f375e012",
+    "configs/sweep.json": "fbf579a2486302ff0ae03ccebe6ca004954116d6c0e37e857c43fd7d295f1687",
+    "configs/transport_variant.json": "73ec63451d47ec91db2bf3dd1f15d10d1755dc4d90f5464dc1c163e0696c8285",
+    "diagnose_spme.py": "cf522e4c812f53cca1a3cdf8f538fd523c03970747d20fee33bd51b7c1133f7b",
+    "plot_results.py": "d20e1bff72d8bab826409cb815f1ad39155146d997b89dbe1888908d767b3180",
+    "plot_validation.py": "ab352406b9b0a0b7c152b825e566f5f0e5136e09fbdd395fdcef50545dc8369c",
+    "prepare_data.py": "66c8dbbc4e726c6c733ed50a72f308ca1278f5dd1aad3b117a05b13a7ae5920f",
+    "requirements-lock.txt": "cfbd8e2f9eae65b245bfa445f22f70b4ccf830a5accb01d3d332228b6fa33127",
+    "run_degradation_demo.py": "385fcfe6b37e29f74bc1c4e1f6b58ab62ae8580dd854413baa3de7f63c9261fd",
+    "run_study.py": "6eaf7bac9178516d4aae87166ea17f3e425c2817635343c96b3aad33991e6519",
+    "select_model.py": "52dcece450cdd006b4c8de638860de86c4a06f298b1dd3377802b37845aac81e",
+    "study_contract.py": "f50a5b75d21f1e9eae89d9a1cc8edfb66707f6a871b5f75d7b911b8172ecc808",
+    "test_contracts.py": "997b8999ddd3fdb331387721f2d6a14070f46a67e1108019f9f1bd91d6c193c1",
+    "validate_data.py": "32e3c7b35131a218f0fbacc0295f15ced29113d5375cb23519e3b10aad715659",
+    "verify_release.py": "8f763be0efc81475a18e0b732dde6deca57875c19b0c8ff54ab571bad45136b5"
+  }
+}

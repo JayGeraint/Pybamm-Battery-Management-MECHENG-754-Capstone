@@ -1,5 +1,10 @@
 # Team responsibilities and delivery plan
 
+November 24 update: this remains the core fidelity-study plan. The independent
+ageing-data and cycling-extension assignments, with concrete handoffs and
+acceptance evidence, are in [IMPLEMENTATION_EVIDENCE_EN.md](IMPLEMENTATION_EVIDENCE_EN.md).
+Use [RELEASE_20261124_EN.md](RELEASE_20261124_EN.md) for current code and results.
+
 This plan assigns you the modelling and integration lead, with two independent workstreams for teammates who can handle data analysis and literature writing. It provisionally uses the report's December 10, 2026 deadline, which has not been separately confirmed. No messages have been sent to teammates.
 
 | Owner | Approximate share | Independent scope | Deliverables |

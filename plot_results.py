@@ -8,6 +8,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import json
+from study_contract import read_trace
 
 
 def main():
@@ -18,23 +20,28 @@ def main():
     out.mkdir(exist_ok=True)
     s = pd.read_csv(a.folder / "summary.csv")
     c = pd.read_csv(a.folder / "comparisons.csv")
+    cfg = json.loads((a.folder / "config.json").read_text())
+    soc_column = "soc" if "soc_definition" in cfg else "soc_nominal"
+    soc_label = "Electrode-window SOC" if cfg.get("soc_definition") == "electrode_window" else "Nominal-capacity SOC proxy"
+    normalization = {}
     plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False})
     for (rate, temp), group in s[s.status == "ok"].groupby(["rate_c", "ambient_c"]):
         fig, axes = plt.subplots(2, 3, figsize=(13, 7), constrained_layout=True)
         for _, row in group.iterrows():
             name = row.model
-            f = pd.read_csv(a.folder / "traces" / f"{name}_{rate:g}C_{temp:g}degC.csv")
+            f = read_trace(a.folder / "traces" / f"{name}_{rate:g}C_{temp:g}degC.csv", duplicate_policy="keep_last")
+            normalization[f"{name}_{rate:g}C_{temp:g}degC"] = f.attrs["exact_duplicates_removed"]
             for ax, col, label in zip(axes.flat,
-                ["voltage_v", "current_a", "temperature_c", "soc_nominal", "anode_mean_v", "anode_separator_v"],
+                ["voltage_v", "current_a", "temperature_c", soc_column, "anode_mean_v", "anode_separator_v"],
                 ["Terminal voltage (V)", "Current (A), charging < 0", "Lumped temperature (deg C)",
-                 "Coulomb-counted nominal SOC", "Mean anode potential difference (V)", "Separator anode potential difference (V)"]):
+                 soc_label, "Mean anode potential difference (V)", "Separator anode potential difference (V)"]):
                 ax.plot(f.time_s / 60, f[col], label=name, linewidth=1.6)
                 ax.set(xlabel="Time (min)", ylabel=label)
                 ax.grid(alpha=.2)
         for ax in axes[1, 1:]:
             ax.axhline(0, color="black", linestyle=":", linewidth=.7)
         axes[0, 0].legend()
-        fig.suptitle(f"Chen2020 model comparison | {rate:g}C charge | ambient {temp:g} deg C\n"
+        fig.suptitle(f"{cfg.get('parameter_variant', 'Chen2020')} | {rate:g}C charge | ambient {temp:g} deg C\n"
                      "Numerical simulation; reduced-model separator values have reduced spatial fidelity", fontsize=12)
         fig.savefig(out / f"comparison_{rate:g}C_{temp:g}degC.png", dpi=180)
         plt.close(fig)
@@ -57,6 +64,8 @@ def main():
         fig.suptitle("Model fidelity and measured compute cost | Simulation benchmark")
         fig.savefig(out / "accuracy_cost_map.png", dpi=200)
         plt.close(fig)
+    (out / "trace_read_audit.json").write_text(json.dumps({"policy":"round-trip floats; exact duplicates keep last for plotting only",
+            "exact_duplicates_removed":normalization}, indent=2))
     print("Figures:", out)
 
 

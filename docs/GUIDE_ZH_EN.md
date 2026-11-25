@@ -1,5 +1,9 @@
 # PyBaMM 项目分阶段实施指南 PyBaMM implementation guide
 
+**2026-11-24 update / 更新：** 当前版本的 `soc` 和 `time_to_80_soc_s` 使用与初始状态一致的电极容量窗口（约 5.153198 Ah）；`soc_nominal` 仅保留为 5 Ah 标称容量对照。倍率定义仍为 1C = 5 A。下文旧版结果中的标称 SOC 时间不能直接作为新版 80% 目标。
+
+The current `soc` and `time_to_80_soc_s` use the electrode-window capacity consistent with initialization (about 5.153198 Ah); `soc_nominal` remains the 5 Ah historical proxy. C-rate still means 1C = 5 A. See [the current release](RELEASE_20261124_EN.md) for runnable commands, checks and parameter variants, and [implementation evidence](IMPLEMENTATION_EVIDENCE_EN.md) for the still-open degradation, lifetime and optimization objectives.
+
 本指南说明如何运行已部署的三模型研究、理解比较指标、验证结果并完成报告。核心问题是：在给定倍率、环境温度和热边界下，SPM 或 SPMe 能以多大的误差替代 DFN，计算成本又是多少？所有充电扫描都是数值仿真；另有单独的真实放电数据比较入口。
 
 This guide explains the deployed models, reproducible execution, metrics, verification and report preparation. The central question is how SPM and SPMe trade prediction differences against computational cost relative to DFN under specified charging and thermal conditions. Charging sweeps are simulations; measured-discharge comparisons are handled separately.
@@ -86,15 +90,15 @@ All models share cooling conditions, but their generated heat can differ. In thi
 
 **中文步骤：** 运行 baseline 配置；确认 `failures.json` 为空；打开 `summary.csv` 和六联图；检查充电电流为负、CC 段电压上升、CV 段电压约为 4.2 V 且电流幅值下降。终止电流应约为 −0.25 A。脚本检查数值有限、时间递增、充电符号、截止电压及 CC/CV 的事件终止。
 
-**English:** Run the baseline and check that no cases failed. Inspect voltage, current, temperature, nominal SOC and anode indicators. Charging current is negative; the CV stage should remain near 4.2 V as current magnitude falls toward 0.25 A. The runner checks finite values, increasing time, current sign and successful event termination.
+**English:** Run the baseline and check that no cases failed. Inspect voltage, current, temperature, electrode-window SOC and anode indicators. Charging current is negative; the CV stage should remain near 4.2 V as current magnitude falls toward 0.25 A. The runner checks finite values, increasing time, current sign and successful event termination.
 
 原始 `results/baseline` 是首次 40/40 网格的部署检查，作为过程记录保留；正式分析使用 `results/sweep` 中 40/160 网格的 1C/25°C 案例。目录中的 `config.json` 是判定某次结果使用哪套设置的依据。
 
 The original baseline folder retains the initial coarse deployment check. Use the 1C/25°C case in the production sweep for final findings. Each folder's `config.json` identifies its actual settings.
 
-**SOC 特别说明 SOC definition：** `initial_soc=0.1` 用于电极初态；输出 `soc_nominal = 0.1 + Q_added/5 Ah` 是名义容量库仑计量代理，不是独立 SOC 估计或真实可用容量测量。没有副反应时，同一恒流下该量由输入决定，不能把相同 SOC 曲线当作模型精度优势。它在满充末端可能略超过 1，不应偷偷裁剪。`time_to_80_nominal_soc_s` 指这一明确口径达到 0.8 的时间。
+**SOC 特别说明 SOC definition：** `initial_soc=0.1` 用于电极初态；当前主指标为 `soc = 0.1 + Q_added/Q_window`，其中 `Q_window` 由同一参数集的电极化学计量范围计算，约为 5.153198 Ah。`time_to_80_soc_s` 使用该口径。旧版 `soc_nominal = 0.1 + Q_added/5 Ah` 与 `time_to_80_nominal_soc_s` 保留作明确标注的对照。两者都不是独立 SOC 估计；不能把相同 SOC 曲线当作模型精度优势，也不应裁剪超过 1 的代理值。有副反应的退化模型必须另行处理副反应电荷和可用容量。
 
-The reported nominal SOC is a coulomb-counted proxy based on 5 Ah. It is not an independent state estimate and can exceed unity slightly because nominal capacity and the parameterized stoichiometric capacity are not identical. Do not silently clip it or claim SOC-estimation accuracy from it.
+The primary SOC now uses the electrode-window capacity derived from the same parameterization as initialization. The retained nominal proxy uses 5 Ah and may exceed unity because the two capacity conventions differ. Neither is an independent SOC estimate. Do not clip the proxy or claim SOC-estimation accuracy; an ageing model needs a separate treatment of side-reaction charge and available capacity.
 
 ## 阶段五 数值验证 Stage 5 Numerical verification
 
@@ -151,7 +155,7 @@ Uniform resampling prevents adaptive solver output density from weighting the me
 | current_a_rmse | CV 电流轨迹与切换时机差异 Includes CV-current and switching differences |
 | cc_end_error_s | 转入 CV 的时间误差 CC-to-CV transition difference |
 | charge_end_error_s | C/20 终止时刻误差 End-of-charge difference |
-| time_to_80_error_s | 名义 SOC 代理达到 80% 的时间差 Time-to-target under the documented proxy |
+| time_to_80_error_s | 所选 SOC 定义下达到 80% 的时间差 Time-to-target using the configured SOC definition |
 | charge_added_error_ah / pct | 各自终止时累计充入电量差，不是循环容量衰退 Delivered-charge difference, not capacity fade |
 | anode_mean_mv / anode_separator_mv | 同一位置定义的模型内部指标差 Model-internal indicator differences |
 | warm_wall_speedup | 已构建模型的重复求解加速比 Warm simulation speedup |

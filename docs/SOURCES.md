@@ -1,6 +1,10 @@
 # Sources and evidence use
 
-Verified for this deployment on November 17, 2026. The shared conversation supplies project context; it is not a substitute for primary scientific evidence.
+Core sources were verified for the original deployment on November 17, 2026.
+The November 24 extension sources and their exact evidence boundaries are listed
+in [IMPLEMENTATION_EVIDENCE_EN.md](IMPLEMENTATION_EVIDENCE_EN.md). The shared
+conversation supplies project context; it is not a substitute for primary
+scientific evidence.
 
 1. **Project conversation.** [Claude shared chat](https://claude.ai/share/23665522-511d-4eb5-8baa-f448bef8e1e4). The final discussion selects Option A: model fidelity versus cost without degradation. Earlier plating/optimization suggestions were superseded in that discussion.
 2. **Chen et al. (2020).** [Development of Experimental Techniques for Parameterization of Multi-scale Lithium-ion Battery Models](https://doi.org/10.1149/1945-7111/ab9050), Journal of The Electrochemical Society 167, 080534. Source of the LG M50 parameterization. The physical negative electrode is graphite–SiOx; the standard Chen2020 implementation represents it through effective electrode properties rather than a resolved two-phase composite model.
@@ -15,7 +19,7 @@ Verified for this deployment on November 17, 2026. The shared conversation suppl
 
 - DFN comparison measures model-to-model agreement, not experimental truth.
 - The downloaded dataset checks lower-rate discharge response; it does not validate the entire fast-charge/temperature matrix.
-- The present implementation has no SEI growth, lithium-plating kinetics, loss of active material, ageing cycles, observer, optimizer or closed-loop controller.
+- The fidelity benchmark has no degradation. A separate November 24 single-charge demo enables SEI growth and partially reversible lithium plating with full OKane2022 parameters. It does not identify ageing parameters or validate cycle life. Main still has no ageing-cycle/RPT implementation, loss-of-active-material study, observer, charging optimizer or closed-loop controller.
 - The zero-anode-potential indicator is distinct from intercalation reaction overpotential and is not a measured plating rate.
 - Novelty of a future journal manuscript would require a fuller literature review. This deployment does not claim the first comparison or a previously unstudied operating boundary.
 

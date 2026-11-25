@@ -1,0 +1,19 @@
+{
+  "parameter_set": "OKane2022",
+  "initial_soc": 0.1,
+  "rate_c": 3,
+  "temperature_c": 25,
+  "heat_transfer_w_m2_k": 10,
+  "voltage_limit_v": 4.2,
+  "cv_cutoff_c": 0.05,
+  "mesh_x": 40,
+  "mesh_r": 160,
+  "rtol": 1e-06,
+  "atol": 1e-08,
+  "sample_period_s": 2,
+  "options": {
+    "thermal": "lumped",
+    "SEI": "solvent-diffusion limited",
+    "lithium plating": "partially reversible"
+  }
+}

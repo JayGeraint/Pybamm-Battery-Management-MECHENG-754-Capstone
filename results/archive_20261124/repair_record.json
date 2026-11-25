@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-24",
+  "file": "results/baseline/traces/SPM_1C_25degC.csv",
+  "archive": "results/archive_20261124/baseline_SPM_1C_25degC_original.csv",
+  "method": "Remove exact duplicate time rows, keeping the last occurrence. Preserve every retained line byte-for-byte; no near-equal times merged.",
+  "removed_original_line_numbers": [
+    1337
+  ],
+  "original_sha256": "5eae8590dac29937b3772e00f34af9a7a9a608ab48a8aaae5b9fd24b4c90b9fe",
+  "corrected_sha256": "6ebab601fdc1ccf04b51896a1b76027dca1b6f61e405dd3eda06d20da287cb9a"
+}

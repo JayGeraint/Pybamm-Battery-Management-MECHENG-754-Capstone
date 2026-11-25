@@ -1,0 +1,10 @@
+{
+  "policy": "round-trip floats; exact duplicates keep last for plotting only",
+  "exact_duplicates_removed": {
+    "SPM_1C_25degC": 0,
+    "SPMe_1C_25degC": 0,
+    "DFN_1C_25degC": 0,
+    "SPM_3C_25degC": 0,
+    "DFN_3C_25degC": 0
+  }
+}

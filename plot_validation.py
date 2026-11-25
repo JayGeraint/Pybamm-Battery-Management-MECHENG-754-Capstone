@@ -1,6 +1,7 @@
 """Plot exported measured-data checks, including residuals and coverage."""
 import argparse
 import os
+import json
 from pathlib import Path
 os.environ.setdefault("MPLCONFIGDIR", str(Path.cwd() / "work/mpl-cache"))
 import matplotlib
@@ -14,6 +15,8 @@ def main():
     parser.add_argument("folder",type=Path)
     a=parser.parse_args()
     summary=pd.read_csv(a.folder/"validation_metrics.csv")
+    config_path=a.folder/"config.json"
+    variant=json.loads(config_path.read_text()).get("parameter_variant","Chen2020") if config_path.exists() else "Chen2020"
     dest=a.folder/"figures"
     dest.mkdir(exist_ok=True)
     for (cell,step), group in summary[summary.status=="ok"].groupby(["cell","step"]):
@@ -31,7 +34,7 @@ def main():
             ax.grid(alpha=.2)
             ax.legend(fontsize=8)
         axes[1].axhline(0,color="black",linewidth=.7)
-        fig.suptitle(f"{cell}, discharge step {int(step)}\nChen2020, no parameter fitting; rested-voltage initialization")
+        fig.suptitle(f"{cell}, discharge step {int(step)} | {variant}\nNo parameter fitting; rested-voltage initialization",fontsize=10)
         fig.savefig(dest/f"{cell}_step{int(step)}.png",dpi=180)
         plt.close(fig)
     print(dest)

@@ -1,0 +1,21 @@
+{
+  "execution_status": "completed",
+  "wall_s": 34.915834800107405,
+  "integrator_s": 19.126614599954337,
+  "minimum_electrolyte_mol_m3": 62.79519799763979,
+  "peak_temperature_c": 66.69820521465329,
+  "final_current_a": -0.24999999999999997,
+  "end_s": 2766.0818065707476,
+  "step_terminations": [
+    "event: Voltage > 4.2 [V] [experiment]",
+    "event: C-rate cut-off [experiment]"
+  ],
+  "final_sei_capacity_variable_ah": 0.0001048051769880938,
+  "final_plating_capacity_variable_ah": 0.016935646585192848,
+  "initial_sei_capacity_variable_ah": 8.673617379884035e-19,
+  "initial_plating_capacity_variable_ah": 0.0,
+  "delta_sei_capacity_variable_ah": 0.00010480517698809293,
+  "delta_plating_capacity_variable_ah": 0.016935646585192848,
+  "scope": "single-charge execution evidence only; no fit, cycling, RPT, lifetime or optimization",
+  "interpretation": "plating variable includes reversible lithium inventory; not measured irreversible capacity loss"
+}

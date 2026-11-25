@@ -1,21 +1,85 @@
 {
-  "date": "2026-11-17",
-  "production_cases_attempted": 36,
-  "production_cases_completed": 33,
-  "production_failures": [
-    "SPMe 3C 10C",
-    "SPMe 3C 25C",
-    "SPMe 3C 40C"
-  ],
-  "positive_electrolyte_audit_cases": 33,
-  "measurement_checks_completed": 9,
-  "production_numerical_checks_passed": 4,
-  "final_runner_baseline_passed": true,
-  "nonphysical_concentration_guard_test_passed": true,
-  "notes": [
-    "Production timing is from results/sweep only.",
-    "Final runner adds a concentration guard and solver injection support; model equations and production configuration are unchanged.",
-    "Casadi exploration was interrupted without a completed result and is not an accepted alternative.",
-    "Experimental comparison is preliminary and uses 40/40 mesh; charging benchmark uses 40/160."
-  ]
+  "date": "2026-11-24",
+  "scope": "release_20261124; executed numerical checks, not a safety certification",
+  "contract_tests_passed": 6,
+  "locked_environment_matches": true,
+  "source_hashes_checked": 119,
+  "strictly_increasing_charge_traces": 77,
+  "non_model_source_updates": {
+    "plot_validation.py": {
+      "captured_sha256": "ab352406b9b0a0b7c152b825e566f5f0e5136e09fbdd395fdcef50545dc8369c",
+      "current_sha256": "2b659b8e2b73d1384e06814b97911443c64abcf79297ae9ff10c39f3415200fc",
+      "archive": "docs/history/plot_validation_at_model_run.py.txt",
+      "reason": "Post-solve plot caption or audit update; no numerical dependency changed"
+    },
+    "verify_release.py": {
+      "captured_sha256": "8f763be0efc81475a18e0b732dde6deca57875c19b0c8ff54ab571bad45136b5",
+      "current_sha256": "03fdffcb92087e4d0be3e6779d970fa36b657c8594fb33402bbb8b35dc8ccfe2",
+      "archive": "docs/history/verify_release_at_model_run.py.txt",
+      "reason": "Post-solve plot caption or audit update; no numerical dependency changed"
+    }
+  },
+  "sweeps": {
+    "sweep": {
+      "attempted": 36,
+      "completed": 33,
+      "failed": 3,
+      "accuracy_categories": {
+        "accuracy_failure": 15,
+        "adequate": 6
+      }
+    },
+    "transport_variant": {
+      "attempted": 6,
+      "completed": 5,
+      "failed": 1,
+      "accuracy_categories": {
+        "accuracy_failure": 2,
+        "adequate": 1
+      }
+    }
+  },
+  "numerical_checks": {
+    "convergence": {
+      "checks": 4,
+      "passed": 4
+    },
+    "transport_convergence": {
+      "checks": 4,
+      "passed": 4
+    }
+  },
+  "measured_discharge": {
+    "validation": {
+      "completed": 9,
+      "dfn_voltage_rmse_mv": [
+        70.07295130659193,
+        63.48368826170467,
+        62.069183467197824
+      ],
+      "minimum_coverage_pct": 100.0
+    },
+    "transport_validation": {
+      "completed": 9,
+      "dfn_voltage_rmse_mv": [
+        110.78480148387438,
+        104.10360871856916,
+        102.66704787402205
+      ],
+      "minimum_coverage_pct": 100.0
+    }
+  },
+  "selector_1c_25c": {
+    "status": "selected",
+    "model": "SPMe",
+    "parameter_variant": "Chen2020",
+    "soc_definition": "electrode_window",
+    "basis": "lowest measured median warm wall time among adequate models; DFN fallback",
+    "scope": "numerical fidelity only; operating safety is not established"
+  },
+  "degradation_demo_status": "completed",
+  "degradation_identification_complete": false,
+  "cycle_life_validation_complete": false,
+  "charge_optimization_complete": false,
+  "language_status": "passed"
 }

@@ -1,0 +1,13 @@
+[
+  {
+    "case": "SPMe_3C_25degC",
+    "model": "SPMe",
+    "rate_c": 3.0,
+    "ambient_c": 25.0,
+    "status": "failed",
+    "error": "RunRejected('Nonphysical electrolyte concentration: minimum -6.7376 mol/m3')",
+    "run_category": "physical_failure",
+    "parameter_variant": "Chen2020_OKane2022_transport",
+    "soc_definition": "electrode_window"
+  }
+]

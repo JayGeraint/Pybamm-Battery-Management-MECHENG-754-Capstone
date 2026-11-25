@@ -1,0 +1,131 @@
+"""Verify scientific release evidence; optionally refresh audits and the manifest.
+
+Run from a Git checkout with the pinned environment. No battery models run here.
+"""
+import argparse
+import ast
+import hashlib
+import importlib.metadata
+import json
+from pathlib import Path
+import re
+import subprocess
+import unittest
+import numpy as np
+import pandas as pd
+from study_contract import read_trace, evidence_json, classify
+from select_model import select
+
+ROOT = Path(__file__).resolve().parent
+
+
+def distributed_files():
+    names = subprocess.check_output(["git","ls-files","-c","-o","--exclude-standard","-z"],cwd=ROOT).decode().split("\0")
+    return sorted({n for n in names if n and (ROOT/n).is_file()})
+
+
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def check():
+    release = ROOT/"results/release_20261124"
+    suite = unittest.defaultTestLoader.discover(str(ROOT),pattern="test_contracts.py")
+    result = unittest.TextTestRunner(verbosity=1).run(suite)
+    if not result.wasSuccessful(): raise ValueError("Contract regression checks failed")
+    for p in ROOT.glob("*.py"): ast.parse(p.read_text(encoding="utf-8"),filename=p.name)
+    for line in (ROOT/"requirements-lock.txt").read_text().splitlines():
+        if "==" in line and not line.startswith("#"):
+            name,version=line.strip().split("==")
+            if importlib.metadata.version(name) != version: raise ValueError(f"Dependency mismatch: {name}")
+    checked_sources=0
+    non_model_updates={}
+    for p in release.rglob("environment.json"):
+        for name,expected in json.loads(p.read_text())["source_sha256"].items():
+            if digest(ROOT/name) != expected:
+                # A caption correction and this audit change happened after the
+                # solves. Preserve and verify the actual run-time snapshots;
+                # never exempt numerical runners, parameters or configurations.
+                archive=ROOT/"docs/history"/(Path(name).stem+"_at_model_run.py.txt")
+                if name not in {"plot_validation.py","verify_release.py"} or not archive.exists() or digest(archive)!=expected:
+                    raise ValueError(f"Run source differs from release: {p}: {name}")
+                non_model_updates[name]={"captured_sha256":expected,"current_sha256":digest(ROOT/name),
+                    "archive":archive.relative_to(ROOT).as_posix(),
+                    "reason":"Post-solve plot caption or audit update; no numerical dependency changed"}
+            checked_sources+=1
+    counts={}
+    for name,expected in [("sweep",36),("transport_variant",6)]:
+        p=release/name
+        if not json.loads((p/"run_status.json").read_text())["execution_complete"]: raise ValueError("Incomplete sweep")
+        s=pd.read_csv(p/"summary.csv",float_precision="round_trip")
+        if len(s)!=expected: raise ValueError(f"Missing cases: {name}")
+        ok=s[s.status=="ok"]
+        if not ((ok.minimum_electrolyte_mol_m3>0).all() and np.isfinite(ok.minimum_electrolyte_mol_m3).all()):
+            raise ValueError("Invalid completed case")
+        if not ok.warm_repeats_s.map(lambda x: len(json.loads(x))==5 and np.isfinite(json.loads(x)).all()).all():
+            raise ValueError("Missing benchmark repetitions")
+        c=pd.read_csv(p/"comparisons.csv",float_precision="round_trip")
+        for row in c.to_dict("records"):
+            if row["accuracy_category"]!=classify(row): raise ValueError("Inconsistent accuracy category")
+        counts[name]={"attempted":len(s),"completed":len(ok),"failed":len(s)-len(ok),
+                      "accuracy_categories":c.accuracy_category.value_counts().to_dict()}
+    convergence={}
+    for name in ("convergence","transport_convergence"):
+        c=pd.read_csv(release/name/"convergence.csv")
+        acceptance=c[c.coarse.astype(str)!="20"]
+        convergence[name]={"checks":len(acceptance),"passed":int(acceptance.passes_numerical_screen.sum())}
+        if len(acceptance)!=4 or not acceptance.passes_numerical_screen.all(): raise ValueError(f"Numerical screen failed: {name}")
+    validation={}
+    for name in ("validation","transport_validation"):
+        v=pd.read_csv(release/name/"validation_metrics.csv")
+        if len(v)!=9 or not (v.status=="ok").all(): raise ValueError(f"Missing validation cases: {name}")
+        if not np.isfinite(v[["voltage_rmse_mv","coverage_pct","cutoff_time_error_s"]]).all().all():
+            raise ValueError("Nonfinite validation metrics")
+        validation[name]={"completed":len(v),"dfn_voltage_rmse_mv":v[v.model=="DFN"].voltage_rmse_mv.to_list(),
+                          "minimum_coverage_pct":float(v.coverage_pct.min())}
+    demo=json.loads((release/"degradation_demo/metrics.json").read_text())
+    if demo["execution_status"]!="completed": raise ValueError("Demo did not complete")
+    traces=list((ROOT/"results").glob("**/traces/*.csv"))
+    for p in traces: read_trace(p)
+    selected=select(release/"sweep",1.,25.)
+    if selected["status"]!="selected": raise ValueError("Production selector failed")
+    chinese=[]
+    files=distributed_files()
+    for name in files:
+        p=ROOT/name
+        if p.suffix.lower() in {".md",".py",".json",".csv",".txt",".ps1"} and name!="docs/GUIDE_ZH_EN.md":
+            if re.search(r"[\u3400-\u4dbf\u4e00-\u9fff]",p.read_text(encoding="utf-8-sig")):
+                chinese.append(name)
+    if chinese: raise ValueError(f"Non-English formal deliverables: {chinese}")
+    return {"date":"2026-11-24","scope":"release_20261124; executed numerical checks, not a safety certification",
+        "contract_tests_passed":result.testsRun,"locked_environment_matches":True,
+        "source_hashes_checked":checked_sources,"strictly_increasing_charge_traces":len(traces),
+        "non_model_source_updates":non_model_updates,
+        "sweeps":counts,"numerical_checks":convergence,"measured_discharge":validation,
+        "selector_1c_25c":selected,"degradation_demo_status":demo["execution_status"],
+        "degradation_identification_complete":False,"cycle_life_validation_complete":False,
+        "charge_optimization_complete":False,"language_status":"passed"}
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--write-audits",action="store_true")
+    args=parser.parse_args()
+    report=check()
+    if args.write_audits:
+        history=ROOT/"docs/history";history.mkdir(exist_ok=True)
+        for name in ("verification.json","LANGUAGE_AUDIT.json"):
+            old=history/(Path(name).stem+"_20261117.json")
+            if not old.exists(): old.write_bytes((ROOT/name).read_bytes())
+        evidence_json(ROOT/"verification.json",report)
+        evidence_json(ROOT/"LANGUAGE_AUDIT.json",{"date":"2026-11-24","status":"passed",
+            "allowed_bilingual_file":"docs/GUIDE_ZH_EN.md","method":"CJK scan of distributed text; English labels in new figure sources"})
+        evidence_json(ROOT/"MANIFEST_SHA256.json",{n:digest(ROOT/n) for n in distributed_files() if n!="MANIFEST_SHA256.json"})
+    manifest=json.loads((ROOT/"MANIFEST_SHA256.json").read_text())
+    actual={n:digest(ROOT/n) for n in distributed_files() if n!="MANIFEST_SHA256.json"}
+    if actual!=manifest: raise ValueError("Manifest differs from distributed files; inspect changes before refreshing")
+    print(json.dumps(report,indent=2,allow_nan=False))
+    print(f"Manifest passed: {len(actual)} files")
+
+
+if __name__ == "__main__": main()

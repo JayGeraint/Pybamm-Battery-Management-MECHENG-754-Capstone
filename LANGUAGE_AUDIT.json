@@ -1,16 +1,6 @@
 {
-  "date": "2026-11-17",
-  "language_requirement": "English-only deliverables; Chinese-English parallel text permitted only in the implementation guide.",
-  "bilingual_exception": "GUIDE_ZH_EN.md",
-  "text_files_scanned": 123,
-  "unexpected_chinese_text_files": [],
-  "stale_document_references": [],
-  "unchanged_code_data_and_figure_files_verified": 132,
-  "figure_language_check": "Both plotting scripts use English labels; all existing figures retain their original verified hashes.",
-  "renamed_documents": {
-    "ABSTRACT_REVIEW_ZH_EN.md": "ABSTRACT_REVIEW_EN.md",
-    "RESULTS_SUMMARY_ZH_EN.md": "RESULTS_SUMMARY_EN.md",
-    "TEAM_TASKS_ZH_EN.md": "TEAM_TASKS_EN.md"
-  },
-  "status": "passed"
+  "date": "2026-11-24",
+  "status": "passed",
+  "allowed_bilingual_file": "docs/GUIDE_ZH_EN.md",
+  "method": "CJK scan of distributed text; English labels in new figure sources"
 }

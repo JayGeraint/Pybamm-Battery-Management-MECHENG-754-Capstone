@@ -1,5 +1,9 @@
 # Verified deployment results
 
+Historical record: the numbers below use the November 17 code and nominal-SOC
+time metric. For the current implementation, consistent electrode-window SOC,
+fresh benchmarks and validation, see [the November 24 release](RELEASE_20261124_EN.md).
+
 Date: November 17, 2026. The numbers below come from executed simulations and measured-data comparisons, not proposed targets. Production charging results are in `results/sweep`, with configuration and environment records.
 
 ## Completed work

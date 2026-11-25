@@ -20,6 +20,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import pybamm
+from study_contract import (parameters, capacity_basis, validate_config, classify,
+                            RunRejected, source_hashes)
 
 VARIABLES = {
     "voltage_v": "Voltage [V]",
@@ -43,7 +45,7 @@ def environment():
 def make_sim(model_name, rate, temp, cfg, mesh=None, solver=None):
     model = getattr(pybamm.lithium_ion, model_name)(
         {"thermal": "lumped", "cell geometry": "arbitrary"})
-    params = pybamm.ParameterValues("Chen2020")
+    params = parameters(cfg.get("parameter_variant", "Chen2020"))
     params.update({"Ambient temperature [K]": temp + 273.15,
                    "Initial temperature [K]": temp + 273.15,
                    "Total heat transfer coefficient [W.m-2.K-1]": cfg["heat_transfer_w_m2_k"]})
@@ -66,7 +68,7 @@ def make_sim(model_name, rate, temp, cfg, mesh=None, solver=None):
 def extract(sol, cfg):
     min_ce = float(np.min(sol["Electrolyte concentration [mol.m-3]"].entries))
     if not np.isfinite(min_ce) or min_ce <= 0:
-        raise ValueError(f"Nonphysical electrolyte concentration: minimum {min_ce:g} mol/m3")
+        raise RunRejected(f"Nonphysical electrolyte concentration: minimum {min_ce:g} mol/m3")
     t = np.asarray(sol.t)
     # Preserve both sides of a switch in raw solver output; drop exact duplicates.
     t = np.unique(t)
@@ -74,32 +76,36 @@ def extract(sol, cfg):
     for col, var in VARIABLES.items():
         data[col] = np.asarray(sol[var](t)).reshape(-1)
     data["temperature_c"] = data["temperature_k"] - 273.15
-    # Coulomb-counted nominal SOC, NOT an independently estimated internal SOC.
-    data["soc_nominal"] = cfg["initial_soc"] - data["discharge_capacity_ah"] / 5.0
+    basis = capacity_basis(cfg.get("parameter_variant", "Chen2020"))
+    data["soc_nominal"] = cfg["initial_soc"] - data["discharge_capacity_ah"] / basis["nominal_capacity_ah"]
+    data["soc_electrode_window"] = cfg["initial_soc"] - data["discharge_capacity_ah"] / basis["electrode_window_capacity_ah"]
+    data["soc"] = data["soc_nominal" if cfg.get("soc_definition") == "nominal_5Ah" else "soc_electrode_window"]
     data["charge_added_ah"] = -data["discharge_capacity_ah"]
     frame = pd.DataFrame(data)
     if not np.isfinite(frame.to_numpy()).all():
-        raise ValueError("Non-finite model output")
+        raise RunRejected("Non-finite model output")
     if np.any(np.diff(t) <= 0):
-        raise ValueError("Time is not strictly increasing")
+        raise RunRejected("Time is not strictly increasing", "protocol_failure")
     if frame.current_a.max() > 1e-6:
-        raise ValueError("Expected charge-negative current")
+        raise RunRejected("Expected charge-negative current", "protocol_failure")
     if frame.voltage_v.max() > cfg["voltage_limit_v"] + 0.002:
-        raise ValueError("Voltage limit exceeded by more than numerical allowance")
+        raise RunRejected("Voltage limit exceeded by more than numerical allowance", "protocol_failure")
     steps = sol.cycles[0].steps
     if len(steps) != 2 or any(s is None for s in steps):
-        raise ValueError("Expected completed CC and CV steps")
+        raise RunRejected("Expected completed CC and CV steps", "protocol_failure")
     if not all(str(s.termination).startswith("event:") for s in steps):
-        raise ValueError("Charge reached a time limit or an unexpected termination: "
-                         + str([s.termination for s in steps]))
-    if abs(frame.current_a.iloc[-1] + cfg["cv_cutoff_c"] * 5) > 0.005:
-        raise ValueError("CV current cutoff was not reached")
+        raise RunRejected("Charge reached a time limit or an unexpected termination: "
+                          + str([s.termination for s in steps]), "protocol_failure")
+    if abs(frame.current_a.iloc[-1] + cfg["cv_cutoff_c"] * basis["nominal_capacity_ah"]) > 0.005:
+        raise RunRejected("CV current cutoff was not reached", "protocol_failure")
     return frame, float(steps[0].t[-1]), [s.termination for s in steps]
 
 
-def time_to_soc(frame, target):
-    s = frame.soc_nominal.to_numpy()
-    if target > s.max():
+def time_to_soc(frame, target, column="soc"):
+    s = frame[column].to_numpy()
+    if not np.isfinite(target) or not np.isfinite(s).all() or np.any(np.diff(s) < -1e-10):
+        raise ValueError("SOC target and charge trajectory must be finite and monotonic")
+    if target > s.max() or target < s.min():
         return float("nan")
     return float(np.interp(target, s, frame.time_s))
 
@@ -123,6 +129,10 @@ def run_one(name, rate, temp, cfg, mesh=None):
         integrator.append(float(sol.solve_time.value))
     frame, cc_end, terminations = extract(sol, cfg)
     meta = {"model": name, "rate_c": rate, "ambient_c": temp,
+            "parameter_variant": cfg.get("parameter_variant", "Chen2020"),
+            "soc_definition": cfg.get("soc_definition", "electrode_window"),
+            "electrode_window_capacity_ah": capacity_basis(cfg.get("parameter_variant", "Chen2020"))["electrode_window_capacity_ah"],
+            "run_category": "completed", "physical_checks_passed": True,
             "mesh_points": mesh or cfg["mesh_points"], "status": "ok",
             "particle_mesh_points": int((mesh or cfg["mesh_points"]) * cfg.get("particle_mesh_points",cfg["mesh_points"]) / cfg["mesh_points"]),
             "minimum_electrolyte_mol_m3": float(np.min(sol["Electrolyte concentration [mol.m-3]"].entries)),
@@ -133,7 +143,9 @@ def run_one(name, rate, temp, cfg, mesh=None):
             "integrator_median_s": float(np.median(integrator)),
             "warm_repeats_s": timings, "cc_end_s": cc_end,
             "charge_end_s": float(frame.time_s.iloc[-1]),
-            "time_to_80_nominal_soc_s": time_to_soc(frame, .8),
+            "time_to_80_soc_s": time_to_soc(frame, .8),
+            "time_to_80_nominal_soc_s": time_to_soc(frame, .8, "soc_nominal"),
+            "time_to_80_electrode_window_soc_s": time_to_soc(frame, .8, "soc_electrode_window"),
             "charge_added_ah": float(frame.charge_added_ah.iloc[-1]),
             "peak_temperature_c": float(frame.temperature_c.max()),
             "min_anode_mean_v": float(frame.anode_mean_v.min()),
@@ -143,8 +155,13 @@ def run_one(name, rate, temp, cfg, mesh=None):
 
 
 def error_on_grid(a, b, column, end, dt=2):
-    if end <= 0:
+    if not np.isfinite(end) or end <= 0 or not np.isfinite(dt) or dt <= 0:
         raise ValueError("No common time interval")
+    for f in (a, b):
+        if len(f) < 2 or not np.isfinite(f[["time_s", column]].to_numpy()).all():
+            raise ValueError("Nonfinite or empty comparison data")
+        if np.any(np.diff(f.time_s) <= 0) or f.time_s.iloc[0] > 0 or f.time_s.iloc[-1] < end:
+            raise ValueError("Comparison would require unordered data or extrapolation")
     grid = np.unique(np.r_[np.arange(0, end, dt), end])
     err = np.interp(grid, a.time_s, a[column]) - np.interp(grid, b.time_s, b[column])
     return float(np.sqrt(np.mean(err**2))), float(np.max(np.abs(err)))
@@ -155,6 +172,8 @@ def compare(frame, reference, meta, refmeta, cfg):
     cc = min(meta["cc_end_s"], refmeta["cc_end_s"])
     end = min(meta["charge_end_s"], refmeta["charge_end_s"])
     row = {"model": meta["model"], "rate_c": meta["rate_c"], "ambient_c": meta["ambient_c"],
+           "parameter_variant": cfg.get("parameter_variant", "Chen2020"),
+           "soc_definition": cfg.get("soc_definition", "electrode_window"),
            "cc_common_end_s": cc, "full_common_end_s": end}
     for col, label, scale, limit in [
         ("voltage_v", "voltage_cc_mv", 1000, cc),
@@ -170,16 +189,17 @@ def compare(frame, reference, meta, refmeta, cfg):
     row.update({
         "cc_end_error_s": meta["cc_end_s"] - refmeta["cc_end_s"],
         "charge_end_error_s": meta["charge_end_s"] - refmeta["charge_end_s"],
-        "time_to_80_error_s": meta["time_to_80_nominal_soc_s"] - refmeta["time_to_80_nominal_soc_s"],
+        "time_to_80_error_s": meta["time_to_80_soc_s"] - refmeta["time_to_80_soc_s"],
+        "time_to_80_error_pct": 100 * (meta["time_to_80_soc_s"] / refmeta["time_to_80_soc_s"] - 1),
+        "peak_temperature_error_c": meta["peak_temperature_c"] - refmeta["peak_temperature_c"],
         "charge_added_error_ah": meta["charge_added_ah"] - refmeta["charge_added_ah"],
         "charge_added_error_pct": 100 * (meta["charge_added_ah"] / refmeta["charge_added_ah"] - 1),
         "warm_wall_speedup": refmeta["warm_solve_wall_median_s"] / meta["warm_solve_wall_median_s"],
         "warm_wall_saved_pct": 100 * (1 - meta["warm_solve_wall_median_s"] / refmeta["warm_solve_wall_median_s"]),
     })
     # Project screening thresholds, not a standard or safety criterion.
-    row["meets_project_screen"] = bool(row["voltage_cc_mv_rmse"] <= 20
-        and row["temperature_c_max_abs"] <= 1
-        and abs(row["time_to_80_error_s"]) <= 60)
+    row["accuracy_category"] = classify(row)
+    row["meets_project_screen"] = row["accuracy_category"] == "adequate"
     return row
 
 
@@ -206,7 +226,10 @@ def run_sweep(cfg, out):
                           f"warm wall {meta['warm_solve_wall_median_s']:.3f}s", flush=True)
                 except Exception as exc:
                     failure = {"case": key, "model": name, "rate_c": rate,
-                               "ambient_c": temp, "status": "failed", "error": repr(exc)}
+                               "ambient_c": temp, "status": "failed", "error": repr(exc),
+                               "run_category": getattr(exc, "category", "solver_or_execution_failure"),
+                               "parameter_variant": cfg.get("parameter_variant", "Chen2020"),
+                               "soc_definition": cfg.get("soc_definition", "electrode_window")}
                     failures.append(failure)
                     summaries.append(failure)
                     print("  FAILED", repr(exc), flush=True)
@@ -267,19 +290,21 @@ def main():
     parser.add_argument("--out", type=Path, required=True, help="New output folder (existing folders refused)")
     parser.add_argument("--convergence", action="store_true")
     args = parser.parse_args()
-    cfg = json.loads(args.config.read_text())
-    if cfg["repeats"] < 1 or not 0 < cfg["initial_soc"] < 1:
-        raise ValueError("Require repeats >=1 and initial_soc in (0,1)")
+    cfg = validate_config(json.loads(args.config.read_text()))
     if args.out.exists():
         raise FileExistsError(f"Choose a new output folder to preserve results: {args.out}")
     args.out.mkdir(parents=True)
     (args.out / "config.json").write_text(json.dumps(cfg, indent=2))
     provenance = environment()
     provenance["script_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    provenance["source_sha256"] = source_hashes()
+    provenance["capacity_basis"] = capacity_basis(cfg["parameter_variant"])
     provenance["source_type"] = "model_simulation; DFN numerical reference; no experimental validation"
     (args.out / "environment.json").write_text(json.dumps(provenance, indent=2))
     problems = convergence(cfg, args.out) if args.convergence else run_sweep(cfg, args.out)
-    (args.out / "run_status.json").write_text(json.dumps({"complete": True, "problem_count": len(problems)}, indent=2))
+    (args.out / "run_status.json").write_text(json.dumps({"execution_complete": True,
+        "all_cases_passed": not problems, "problem_count": len(problems),
+        "accuracy_screen_is_separate": True}, indent=2))
     if problems:
         print(f"Completed with {len(problems)} failed cases/checks. Inspect output.")
         sys.exit(2)

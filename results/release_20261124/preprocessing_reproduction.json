@@ -1,0 +1,26 @@
+{
+  "raw_checksums_verified_by_prepare_data": true,
+  "processed_files": {
+    "LGM50_cell02.csv": {
+      "values_exactly_equal": true,
+      "bytes_equal": true
+    },
+    "LGM50_cell03.csv": {
+      "values_exactly_equal": true,
+      "bytes_equal": true
+    },
+    "LGM50_cell04.csv": {
+      "values_exactly_equal": true,
+      "bytes_equal": true
+    },
+    "quality_audit.json": {
+      "values_exactly_equal": true,
+      "bytes_equal": true
+    },
+    "step_inventory.csv": {
+      "values_exactly_equal": true,
+      "bytes_equal": true
+    }
+  },
+  "method": "Re-executed unchanged prepare_data.py in a separate directory; original data untouched."
+}
